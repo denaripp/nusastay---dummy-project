@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+
+<html class="light" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Reservasi Suaka — NusaStay Boutique Inn Jawa Tengah</title>
+<!-- Fonts & Material Symbols -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Configuration matching Visual Tokens -->
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "amber-demo": "#FFF4DC",
+            "primary-fixed": "#c0ebe7",
+            "inverse-surface": "#31302d",
+            "on-primary-fixed-variant": "#254d4b",
+            "surface-bright": "#fcf9f4",
+            "secondary-container": "#eae1d3",
+            "terracotta-alert": "#B5472F",
+            "surface-container-highest": "#e5e2dd",
+            "on-surface": "#1c1c19",
+            "error-container": "#ffdad6",
+            "surface-variant": "#e5e2dd",
+            "on-secondary": "#ffffff",
+            "on-primary-container": "#7ea6a3",
+            "on-primary": "#ffffff",
+            "on-error": "#ffffff",
+            "surface-dim": "#dcdad5",
+            "error": "#ba1a1a",
+            "surface": "#fcf9f4",
+            "background": "#fcf9f4",
+            "mist-border": "#E2DCD0",
+            "primary": "#002624",
+            "on-tertiary-fixed-variant": "#624000",
+            "surface-container-high": "#ebe8e3",
+            "outline-variant": "#c0c8c7",
+            "outline": "#717978",
+            "surface-container": "#f0ede9",
+            "botanical-green": "#2F7D5B",
+            "secondary-fixed": "#eae1d3",
+            "on-primary-fixed": "#00201f",
+            "on-tertiary-container": "#c6964f",
+            "on-error-container": "#93000a",
+            "tertiary-container": "#4b3000",
+            "tertiary-fixed": "#ffddb1",
+            "on-surface-variant": "#414847",
+            "inverse-primary": "#a5cecb",
+            "on-background": "#1c1c19",
+            "stone-muted": "#5E6663",
+            "secondary-fixed-dim": "#cec5b8",
+            "on-tertiary-fixed": "#291800",
+            "surface-white": "#FFFFFF",
+            "on-secondary-container": "#6a6459",
+            "surface-tint": "#3e6563",
+            "teal-dark": "#0C2B29",
+            "surface-container-low": "#f6f3ee",
+            "tertiary": "#2f1d00",
+            "charcoal-text": "#1F2523",
+            "on-secondary-fixed": "#1f1b13",
+            "inverse-on-surface": "#f3f0eb",
+            "primary-fixed-dim": "#a5cecb",
+            "on-secondary-fixed-variant": "#4b463c",
+            "primary-container": "#123c3a",
+            "tertiary-fixed-dim": "#f2be72",
+            "surface-container-lowest": "#ffffff",
+            "on-tertiary": "#ffffff",
+            "secondary": "#635e53"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-xs": "0.25rem",
+            "space-sm": "0.5rem",
+            "space-md": "1rem",
+            "space-lg": "1.5rem",
+            "space-xl": "2rem",
+            "space-2xl": "3rem",
+            "space-3xl": "4.5rem",
+            "space-4xl": "7.5rem",
+            "gutter": "1.5rem",
+            "gutter-mobile": "1rem",
+            "margin": "2.5rem",
+            "margin-mobile": "1.25rem"
+          },
+          "fontFamily": {
+            "button-text": ["Inter"],
+            "display-hero": ["Playfair Display"],
+            "body-md": ["Inter"],
+            "caption": ["Inter"],
+            "headline-md": ["Playfair Display"],
+            "display-hero-mobile": ["Playfair Display"],
+            "body-sm": ["Inter"],
+            "headline-md-mobile": ["Playfair Display"],
+            "body-lg": ["Inter"],
+            "headline-lg": ["Playfair Display"],
+            "title-sm": ["Playfair Display"],
+            "label-eyebrow": ["Inter"],
+            "headline-lg-mobile": ["Playfair Display"]
+          },
+          "fontSize": {
+            "button-text": ["15px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "500" }],
+            "display-hero": ["64px", { "lineHeight": "70px", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+            "body-md": ["16px", { "lineHeight": "27px", "fontWeight": "400" }],
+            "caption": ["13px", { "lineHeight": "20px", "fontWeight": "400" }],
+            "headline-md": ["28px", { "lineHeight": "36px", "fontWeight": "500" }],
+            "display-hero-mobile": ["36px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "body-sm": ["14px", { "lineHeight": "22px", "fontWeight": "400" }],
+            "headline-md-mobile": ["22px", { "lineHeight": "30px", "fontWeight": "500" }],
+            "body-lg": ["18px", { "lineHeight": "30px", "fontWeight": "400" }],
+            "headline-lg": ["44px", { "lineHeight": "52px", "letterSpacing": "-0.015em", "fontWeight": "500" }],
+            "title-sm": ["20px", { "lineHeight": "26px", "fontWeight": "600" }],
+            "label-eyebrow": ["12px", { "lineHeight": "16px", "letterSpacing": "0.12em", "fontWeight": "600" }],
+            "headline-lg-mobile": ["28px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "500" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    /* Subtle decorative background pattern (4-6% opacity batik hint) */
+    .bg-batik-subtle {
+      background-image: radial-gradient(#123C3A 0.75px, transparent 0.75px);
+      background-size: 24px 24px;
+    }
+    /* Ambient Card Elevation */
+    .shadow-organic {
+      box-shadow: 0px 12px 32px rgba(18, 60, 58, 0.05);
+    }
+    .shadow-floating {
+      box-shadow: 0px 16px 40px rgba(18, 60, 58, 0.12);
+    }
+    input:focus, select:focus, textarea:focus {
+      outline: none;
+      border-color: #123C3A;
+      box-shadow: 0 0 0 1px #B88A44;
+    }
+  </style>
+</head>
+<body class="bg-surface text-charcoal-text font-body-md antialiased min-h-screen flex flex-col selection:bg-primary-fixed selection:text-primary">
+<!-- 1. Top Alert Banner -->
+<div class="bg-amber-demo border-b border-mist-border/60 py-2.5 px-margin-mobile md:px-margin text-charcoal-text z-50">
+<div class="max-w-[1200px] mx-auto flex items-center justify-center gap-2.5 text-center">
+<span class="material-symbols-outlined text-primary-container text-body-lg shrink-0">info</span>
+<p class="font-body-sm text-body-sm leading-snug">
+<span class="font-semibold text-charcoal-text">Mode demo — data tidak disimpan.</span> Seluruh proses reservasi ini hanya simulasi portofolio desain interaktif.
+      </p>
+</div>
+</div>
+<!-- 2. Sticky Top Navigation Bar -->
+<header class="bg-surface sticky top-0 z-40 w-full border-b border-mist-border shadow-sm">
+<div class="w-full max-w-[1200px] mx-auto px-margin-mobile md:px-margin h-20 flex items-center justify-between">
+<!-- Brand Logo -->
+<a class="flex items-baseline gap-1.5 group focus:outline-none" href="#">
+<span class="font-headline-md text-headline-md text-primary tracking-tight font-semibold">NusaStay</span>
+<span class="font-label-eyebrow text-label-eyebrow tracking-widest text-stone-muted uppercase font-medium">JAWATENGAH</span>
+</a>
+<!-- Desktop Navigation Menu -->
+<nav class="hidden md:flex items-center gap-8">
+<a class="font-button-text text-button-text text-stone-muted hover:text-primary transition-colors duration-200" href="#">Kamar &amp; Suite</a>
+<a class="font-button-text text-button-text text-stone-muted hover:text-primary transition-colors duration-200" href="#">Pengalaman</a>
+<a class="font-button-text text-button-text text-stone-muted hover:text-primary transition-colors duration-200" href="#">Fasilitas</a>
+<a class="font-button-text text-button-text text-stone-muted hover:text-primary transition-colors duration-200" href="#">Lokasi</a>
+</nav>
+<!-- Right Action Cluster -->
+<div class="flex items-center gap-4">
+<a aria-label="Telepon Resepsionis" class="w-10 h-10 rounded-full flex items-center justify-center text-primary hover:bg-secondary-container/50 transition-colors duration-200" href="tel:+6227288921">
+<span class="material-symbols-outlined text-[20px]">call</span>
+</a>
+<a class="bg-primary-container hover:bg-teal-dark text-on-primary font-button-text text-button-text px-7 py-3 rounded-full transition-all duration-200 shadow-sm hover:-translate-y-0.5 active:scale-95 inline-flex items-center gap-1.5" href="#formulir-reservasi">
+<span>Reservasi Sekarang</span>
+</a>
+</div>
+</div>
+</header>
+<!-- Main Canvas Container -->
+<main class="flex-1 bg-surface bg-batik-subtle py-space-xl md:py-space-2xl">
+<div class="max-w-[1200px] mx-auto px-margin-mobile md:px-margin">
+<!-- Breadcrumbs & Header Section -->
+<div class="mb-space-xl">
+<nav aria-label="Breadcrumb" class="flex items-center gap-2 font-caption text-caption text-stone-muted mb-3">
+<a class="hover:text-primary transition-colors" href="#">Beranda</a>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span aria-current="page" class="text-charcoal-text font-medium">Reservasi</span>
+</nav>
+<div class="max-w-2xl">
+<span class="font-label-eyebrow text-label-eyebrow text-on-tertiary-container tracking-widest uppercase font-semibold block mb-2">RESERVASI SUAKA</span>
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight mb-3">Formulir Reservasi Bilik Suaka</h1>
+<p class="font-body-md text-body-md text-stone-muted leading-relaxed">
+            Lengkapi data Anda di bawah ini untuk merencanakan waktu rehat yang tenang di tengah keasrian alam Jawa Tengah. Konfirmasi ketersediaan akan diproses dengan penuh kehangatan.
+          </p>
+</div>
+</div>
+<!-- 2-Column Desktop Grid Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start" id="formulir-reservasi">
+<!-- KOLOM KIRI: Formulir Reservasi (7 of 12 columns) -->
+<section class="lg:col-span-7 bg-surface-white border border-mist-border rounded-[16px] p-6 md:p-10 shadow-organic">
+<form class="space-y-8" id="booking-form" onsubmit="event.preventDefault(); triggerSimulationAlert();">
+<!-- Bagian 1: Data Tamu -->
+<div>
+<div class="flex items-center gap-2 pb-3 mb-6 border-b border-mist-border/70">
+<span class="w-6 h-6 rounded-full bg-secondary-container text-primary flex items-center justify-center font-button-text text-button-text text-xs">1</span>
+<h2 class="font-title-sm text-title-sm text-primary">Identitas Tamu</h2>
+</div>
+<div class="space-y-4">
+<div>
+<label class="block font-body-sm text-body-sm font-medium text-charcoal-text mb-1.5" for="full-name">Nama Lengkap Sesuai KTP/Paspor</label>
+<input class="w-full h-[52px] px-4 rounded-[12px] border border-mist-border bg-surface-white text-charcoal-text font-body-md placeholder:text-outline/70 transition-all" id="full-name" name="full-name" placeholder="mis. Anindya Prameswari" required="" type="text"/>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div>
+<label class="block font-body-sm text-body-sm font-medium text-charcoal-text mb-1.5" for="phone-wa">Nomor WhatsApp Aktif</label>
+<div class="relative">
+<input class="w-full h-[52px] pl-11 pr-4 rounded-[12px] border border-mist-border bg-surface-white text-charcoal-text font-body-md placeholder:text-outline/70 transition-all" id="phone-wa" name="phone-wa" placeholder="+62 812-xxxx-xxxx" required="" type="tel"/>
+<span class="material-symbols-outlined absolute left-3.5 top-3.5 text-stone-muted text-[20px]">phone_android</span>
+</div>
+</div>
+<div>
+<label class="block font-body-sm text-body-sm font-medium text-charcoal-text mb-1.5" for="email">Email (Opsional)</label>
+<div class="relative">
+<input class="w-full h-[52px] pl-11 pr-4 rounded-[12px] border border-mist-border bg-surface-white text-charcoal-text font-body-md placeholder:text-outline/70 transition-all" id="email" name="email" placeholder="email@anda.com" type="email"/>
+<span class="material-symbols-outlined absolute left-3.5 top-3.5 text-stone-muted text-[20px]">mail</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Bagian 2: Rincian Menginap -->
+<div>
+<div class="flex items-center gap-2 pb-3 mb-6 border-b border-mist-border/70">
+<span class="w-6 h-6 rounded-full bg-secondary-container text-primary flex items-center justify-center font-button-text text-button-text text-xs">2</span>
+<h2 class="font-title-sm text-title-sm text-primary">Rincian Bilik &amp; Tanggal</h2>
+</div>
+<div class="space-y-4">
+<div>
+<label class="block font-body-sm text-body-sm font-medium text-charcoal-text mb-1.5" for="room-type">Pilihan Tipe Kamar</label>
+<div class="relative">
+<select class="w-full h-[52px] pl-4 pr-10 rounded-[12px] border border-mist-border bg-surface-white text-charcoal-text font-body-md appearance-none transition-all cursor-pointer" id="room-type" name="room-type">
+<option selected="" value="deluxe">Deluxe Teras Menoreh — Rp650.000 / malam (Dipilih)</option>
+<option value="standard">Standard Gladak — Rp450.000 / malam</option>
+<option value="suite">Heritage Joglo Suite — Rp950.000 / malam</option>
+</select>
+<span class="material-symbols-outlined absolute right-3.5 top-3.5 text-stone-muted pointer-events-none">expand_more</span>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div>
+<label class="block font-body-sm text-body-sm font-medium text-charcoal-text mb-1.5" for="checkin">Tanggal Check-in</label>
+<div class="relative">
+<input class="w-full h-[52px] pl-11 pr-4 rounded-[12px] border border-mist-border bg-surface-white text-charcoal-text font-body-md transition-all" id="checkin" name="checkin" type="date" value="2025-10-24"/>
+<span class="material-symbols-outlined absolute left-3.5 top-3.5 text-stone-muted text-[20px]">calendar_today</span>
+</div>
+</div>
+<div>
+<label class="block font-body-sm text-body-sm font-medium text-charcoal-text mb-1.5" for="checkout">Tanggal Check-out</label>
+<div class="relative">
+<input class="w-full h-[52px] pl-11 pr-4 rounded-[12px] border border-mist-border bg-surface-white text-charcoal-text font-body-md transition-all" id="checkout" name="checkout" type="date" value="2025-10-26"/>
+<span class="material-symbols-outlined absolute left-3.5 top-3.5 text-stone-muted text-[20px]">event_available</span>
+</div>
+</div>
+</div>
+<div>
+<label class="block font-body-sm text-body-sm font-medium text-charcoal-text mb-1.5" for="guests-count">Jumlah Tamu Menginap</label>
+<div class="relative">
+<select class="w-full h-[52px] pl-11 pr-10 rounded-[12px] border border-mist-border bg-surface-white text-charcoal-text font-body-md appearance-none transition-all cursor-pointer" id="guests-count" name="guests-count">
+<option selected="" value="2">2 Tamu Dewasa</option>
+<option value="3">3 Tamu (Maks. Deluxe)</option>
+<option value="1">1 Tamu</option>
+</select>
+<span class="material-symbols-outlined absolute left-3.5 top-3.5 text-stone-muted text-[20px]">group</span>
+<span class="material-symbols-outlined absolute right-3.5 top-3.5 text-stone-muted pointer-events-none">expand_more</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Bagian 3: Preferensi Tambahan -->
+<div>
+<div class="flex items-center gap-2 pb-3 mb-6 border-b border-mist-border/70">
+<span class="w-6 h-6 rounded-full bg-secondary-container text-primary flex items-center justify-center font-button-text text-button-text text-xs">3</span>
+<h2 class="font-title-sm text-title-sm text-primary">Preferensi &amp; Catatan Tambahan</h2>
+</div>
+<div>
+<label class="block font-body-sm text-body-sm font-medium text-charcoal-text mb-1.5" for="special-notes">Catatan Khusus (Opsional)</label>
+<textarea class="w-full p-4 rounded-[12px] border border-mist-border bg-surface-white text-charcoal-text font-body-md placeholder:text-outline/70 transition-all" id="special-notes" name="special-notes" placeholder="Permintaan khusus terkait jam kedatangan, preferensi jamu sambutan, atau pola makan..." rows="3"></textarea>
+<p class="font-caption text-caption text-stone-muted mt-1.5 flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-botanical-green">spa</span>
+                  Bilik kami menyediakan seduhan herbal hangat selamat datang khas racikan Klaten.
+                </p>
+</div>
+</div>
+<!-- Bagian 4: Konfirmasi & CTA -->
+<div class="pt-2 border-t border-mist-border/80">
+<!-- Checkbox persetujuan -->
+<label class="flex items-start gap-3 cursor-pointer group mb-6 select-none">
+<input class="mt-1 w-5 h-5 rounded-[6px] border-mist-border text-primary-container focus:ring-0 focus:ring-offset-0 cursor-pointer transition-colors" id="demo-consent" required="" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-stone-muted leading-relaxed group-hover:text-charcoal-text">
+                  Saya memahami ini adalah mode demo dan seluruh formulir ini merupakan simulasi interaktif tanpa transaksi nyata.
+                </span>
+</label>
+<!-- Main Pill Button -->
+<button class="w-full bg-primary-container hover:bg-teal-dark active:scale-[0.98] text-on-primary font-button-text text-button-text py-4 px-8 rounded-full shadow-md hover:shadow-lg transition-all duration-200 flex items-center justify-center gap-2" type="submit">
+<span>Ajukan Reservasi Bilik</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+<p class="text-center font-caption text-caption text-stone-muted mt-3 flex items-center justify-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-botanical-green">lock</span>
+                Kerahasiaan data Anda terjaga. Tanpa biaya uang muka di muka.
+              </p>
+</div>
+</form>
+</section>
+<!-- KOLOM KANAN: Sticky Summary Panel (5 of 12 columns) -->
+<aside class="lg:col-span-5 lg:sticky lg:top-28 space-y-4">
+<div class="bg-surface-white border border-mist-border rounded-[16px] p-6 shadow-organic">
+<!-- Summary Header with Badge -->
+<div class="flex items-center justify-between pb-4 border-b border-mist-border/70 mb-5">
+<h2 class="font-title-sm text-title-sm text-primary">Ringkasan Reservasi</h2>
+<span class="px-3 py-1 rounded-full bg-amber-demo text-charcoal-text text-label-eyebrow font-label-eyebrow border border-on-tertiary-container/30">
+                Bilik Terpilih
+              </span>
+</div>
+<!-- Room Photo & Details -->
+<div class="mb-5">
+<div class="relative w-full aspect-[4/3] rounded-[16px] overflow-hidden mb-4 border border-mist-border">
+<img class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" data-alt="A tranquil boutique hotel bedroom in Central Java overlooking a misty green Menoreh hill at dawn. The room features dark teak wood furniture, crisp white organic linen on a low king bed, soft ambient morning light pouring through floor-to-ceiling glass, and warm earthy tones reflecting understated luxury and tactile minimalism." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3ettkjmRX5FycqfhJ8R5WtwpxJLVuEQvhtgSiyaZPpEMVJ3bMOUcppgOODcZ225asIWcUn8uoacFpboZ6Rk--N_YbY19QLV7j4Rtq8ub1GsVPftFTafe6agu4O-_Ts4Luqtk2cs3fPNkJNUQZnQNdf9qQO3xO--taQRHRr9uVRDTlW4wuFxZN9t1b042OBJbDIjfOTahVyakUsywT1OAl5nouROY86WmwK3M4JVAD43T8pbLXoe0eG0uzMm21BR7e6j650d0yQLw"/>
+<div class="absolute bottom-3 left-3 bg-teal-dark/85 backdrop-blur-sm text-surface-bright text-xs px-3 py-1 rounded-full font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">nature_people</span> Pemandangan Perbukitan
+                </div>
+</div>
+<h3 class="font-headline-md text-[22px] leading-tight text-primary font-semibold mb-1">Deluxe Teras Menoreh</h3>
+<p class="font-body-sm text-body-sm text-stone-muted flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-on-tertiary-container">bed</span>
+                32 m² · King + Daybed · Sarapan Organik &amp; Teh Menoreh
+              </p>
+</div>
+<div class="border-t border-dashed border-mist-border my-4"></div>
+<!-- Duration & Dates Breakdown -->
+<div class="bg-surface-container-low p-3.5 rounded-[12px] space-y-2 mb-4 font-body-sm text-body-sm">
+<div class="flex justify-between items-center text-charcoal-text">
+<span class="text-stone-muted flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">login</span> Check-in:
+                </span>
+<span class="font-medium">Jum, 24 Okt 2025 (14.00 WIB)</span>
+</div>
+<div class="flex justify-between items-center text-charcoal-text">
+<span class="text-stone-muted flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">logout</span> Check-out:
+                </span>
+<span class="font-medium">Min, 26 Okt 2025 (12.00 WIB)</span>
+</div>
+<div class="flex justify-between items-center pt-1.5 border-t border-mist-border/60 text-charcoal-text">
+<span class="text-stone-muted">Durasi Rehat:</span>
+<span class="font-semibold text-primary">2 Malam</span>
+</div>
+</div>
+<!-- Price Breakdown Calculation -->
+<div class="space-y-2.5 font-body-sm text-body-sm pb-4 border-b border-mist-border/70 mb-4">
+<div class="flex justify-between text-charcoal-text">
+<span class="text-stone-muted">2 Malam × Rp650.000</span>
+<span class="font-medium">Rp1.300.000</span>
+</div>
+<div class="flex justify-between text-charcoal-text">
+<span class="text-stone-muted">Biaya Layanan &amp; Pajak</span>
+<span class="text-botanical-green font-medium">Termasuk (Gratis)</span>
+</div>
+<div class="flex justify-between text-charcoal-text">
+<span class="text-stone-muted">Sarapan Kebun &amp; Jamu Harian</span>
+<span class="text-botanical-green font-medium">Termasuk (Gratis)</span>
+</div>
+</div>
+<!-- Total Calculation -->
+<div class="flex items-baseline justify-between mb-5">
+<div>
+<span class="font-caption text-caption text-stone-muted block">Total Estimasi Biaya</span>
+<span class="text-xs text-stone-muted">Pelunasan saat kedatangan</span>
+</div>
+<span class="font-headline-md text-[24px] font-bold text-primary tracking-tight">Rp1.300.000</span>
+</div>
+<!-- Benefit Highlight Pill Card -->
+<div class="bg-secondary-container/40 border border-mist-border rounded-[12px] p-3 text-charcoal-text flex items-start gap-2.5 mb-4">
+<span class="material-symbols-outlined text-botanical-green text-[20px] shrink-0 mt-0.5" data-weight="fill" style="font-variation-settings: 'FILL' 1;">verified</span>
+<p class="font-caption text-caption leading-snug">
+<span class="font-semibold">Garansi Fleksibel:</span> Pembatalan gratis hingga 48 jam sebelum kedatangan suaka.
+              </p>
+</div>
+<!-- Fast Concierge Link -->
+<a class="flex items-center justify-center gap-1.5 text-center font-button-text text-button-text text-primary hover:text-teal-dark hover:underline transition-all" href="https://wa.me/6281200000000" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+<span>Butuh bantuan cepat? Hubungi Resepsionis via WhatsApp</span>
+</a>
+</div>
+</aside>
+</div>
+</div>
+</main>
+<!-- 5. Floating Action Button (WhatsApp) -->
+<aside aria-label="WhatsApp Bantuan" class="fixed bottom-6 right-6 z-50">
+<a class="w-14 h-14 rounded-full bg-primary-container hover:bg-teal-dark text-on-primary flex items-center justify-center shadow-floating hover:scale-105 active:scale-95 transition-all duration-200 group" href="https://wa.me/6281200000000" rel="noopener noreferrer" target="_blank" title="Hubungi Resepsionis WhatsApp">
+<!-- WhatsApp Custom Crisp Glyph -->
+<svg class="w-7 h-7 fill-current" viewbox="0 0 24 24">
+<path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 6.46 17.5 2 12.04 2M12.05 3.67C16.58 3.67 20.28 7.37 20.28 11.9C20.28 16.43 16.58 20.13 12.05 20.13C10.61 20.13 9.21 19.75 8 19.03L7.71 18.86L4.6 19.68L5.43 16.65L5.24 16.34C4.44 15.07 4.02 13.51 4.02 11.9C4.02 7.37 7.72 3.67 12.05 3.67M9.22 7.36C9.07 7.36 8.84 7.42 8.64 7.64C8.44 7.86 7.87 8.39 7.87 9.47C7.87 10.55 8.66 11.59 8.77 11.74C8.88 11.89 10.42 14.27 12.78 15.29C14.74 16.14 15.14 15.97 15.56 15.93C15.99 15.89 16.94 15.36 17.14 14.8C17.34 14.24 17.34 13.76 17.28 13.66C17.22 13.56 17.07 13.5 16.84 13.39C16.61 13.28 15.5 12.73 15.29 12.66C15.08 12.59 14.93 12.55 14.78 12.78C14.63 13.01 14.19 13.53 14.06 13.68C13.93 13.84 13.8 13.86 13.57 13.75C13.34 13.64 12.6 13.4 11.72 12.61C11.03 12 10.57 11.24 10.44 11.01C10.31 10.78 10.43 10.66 10.54 10.55C10.64 10.45 10.77 10.28 10.88 10.15C10.99 10.02 11.03 9.92 11.11 9.77C11.19 9.62 11.15 9.49 11.09 9.38C11.03 9.27 10.6 8.21 10.42 7.78C10.24 7.36 10.06 7.42 9.93 7.42C9.81 7.41 9.66 7.41 9.51 7.41L9.22 7.36Z"></path>
+</svg>
+</a>
+</aside>
+<!-- 6. Footer (Shared Component Specification) -->
+<footer class="bg-teal-dark border-t border-primary-container text-surface-bright mt-auto">
+<div class="w-full max-w-[1200px] mx-auto px-margin-mobile md:px-margin py-space-2xl">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-10 border-b border-primary-container/80">
+<!-- Col 1: Identity & Spirit -->
+<div class="md:col-span-1 space-y-3">
+<span class="font-headline-md text-headline-md text-surface-bright tracking-tight font-semibold block">NusaStay</span>
+<p class="font-body-sm text-body-sm text-outline-variant leading-relaxed">
+            Sanctuari ramah dengan sentuhan arsitektur khas Jawa Tengah. Menyajikan keheningan dan kehangatan tradisi bagi mereka yang mencari jeda.
+          </p>
+</div>
+<!-- Col 2: Navigation Links -->
+<div>
+<h4 class="font-title-sm text-title-sm text-surface-bright mb-4 font-medium">Navigasi Tamu</h4>
+<ul class="space-y-2.5 font-body-sm text-body-sm">
+<li><a class="text-outline-variant hover:text-surface-bright transition-colors duration-200" href="#">Kamar &amp; Suite</a></li>
+<li><a class="text-outline-variant hover:text-surface-bright transition-colors duration-200" href="#">Pengalaman</a></li>
+<li><a class="text-outline-variant hover:text-surface-bright transition-colors duration-200" href="#">Fasilitas</a></li>
+<li><a class="text-outline-variant hover:text-surface-bright transition-colors duration-200" href="#">Lokasi</a></li>
+</ul>
+</div>
+<!-- Col 3: Legal & Guide -->
+<div>
+<h4 class="font-title-sm text-title-sm text-surface-bright mb-4 font-medium">Informasi Reservasi</h4>
+<ul class="space-y-2.5 font-body-sm text-body-sm">
+<li><a class="text-outline-variant hover:text-surface-bright transition-colors duration-200" href="#">Kebijakan Privasi</a></li>
+<li><a class="text-outline-variant hover:text-surface-bright transition-colors duration-200" href="#">Syarat &amp; Ketentuan Reservasi</a></li>
+<li><a class="text-outline-variant hover:text-surface-bright transition-colors duration-200" href="#">Panduan Tamu</a></li>
+<li><a class="text-outline-variant hover:text-surface-bright transition-colors duration-200" href="#">Bantuan &amp; FAQ</a></li>
+</ul>
+</div>
+<!-- Col 4: Contact & Hours -->
+<div class="space-y-3">
+<h4 class="font-title-sm text-title-sm text-surface-bright mb-4 font-medium">Layanan Resepsionis</h4>
+<p class="font-body-sm text-body-sm text-outline-variant leading-relaxed">
+            Dukuh Menoreh Asri, Klaten, Jawa Tengah 57411<br/>
+            Layanan Resepsionis: 24 Jam
+          </p>
+<p class="font-caption text-caption text-primary-fixed">
+            WhatsApp: +62 812-8899-2100
+          </p>
+<div class="pt-1">
+<span class="inline-block px-2.5 py-1 rounded bg-primary-container text-xs text-on-primary-container">
+              Proyek simulasi portofolio. Seluruh data bersifat fiktif.
+            </span>
+</div>
+</div>
+</div>
+<!-- Footer Bottom Copyright -->
+<div class="pt-8 flex flex-col md:flex-row items-center justify-between text-caption font-caption text-outline-variant gap-4">
+<p>© 2025 NusaStay Boutique Inn Jawa Tengah. Portofolio Fiktif &amp; Eksplorasi Desain. Seluruh hak cipta dilindungi.</p>
+<div class="flex gap-6">
+<a class="hover:text-surface-bright transition-colors" href="#">Kebijakan Privasi</a>
+<a class="hover:text-surface-bright transition-colors" href="#">Syarat &amp; Ketentuan Reservasi</a>
+</div>
+</div>
+</div>
+</footer>
+<!-- Simulation Toast Notification Logic -->
+<div class="fixed inset-0 bg-primary/40 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4" id="demo-modal">
+<div class="bg-surface-white border border-mist-border rounded-[16px] max-w-md w-full p-6 text-center shadow-floating transform transition-all">
+<div class="w-14 h-14 bg-amber-demo text-on-tertiary-container rounded-full flex items-center justify-center mx-auto mb-4">
+<span class="material-symbols-outlined text-[32px]">task_alt</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Simulasi Reservasi Diajukan</h3>
+<p class="font-body-sm text-body-sm text-stone-muted leading-relaxed mb-6">
+        Terima kasih telah mencoba prototipe interaktif ini. Karena ini adalah mode portofolio desain, data Anda aman dan tidak disimpan ke basis data server manapun.
+      </p>
+<button class="w-full bg-primary-container hover:bg-teal-dark text-on-primary font-button-text text-button-text py-3 rounded-full transition-all" onclick="closeModal()">
+        Kembali ke Pratinjau Desain
+      </button>
+</div>
+</div>
+<script>
+    function triggerSimulationAlert() {
+      const modal = document.getElementById('demo-modal');
+      modal.classList.remove('hidden');
+    }
+
+    function closeModal() {
+      const modal = document.getElementById('demo-modal');
+      modal.classList.add('hidden');
+    }
+  </script>
+</body></html>

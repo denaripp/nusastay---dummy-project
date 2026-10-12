@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Galeri Suaka Menoreh — NusaStay Boutique Inn Jawa Tengah</title>
+<!-- Google Fonts & Material Symbols -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "outline": "#717978",
+            "tertiary": "#2f1d00",
+            "inverse-surface": "#31302d",
+            "surface-container-high": "#ebe8e3",
+            "tertiary-fixed-dim": "#f2be72",
+            "stone-muted": "#5E6663",
+            "primary-container": "#123c3a",
+            "on-error-container": "#93000a",
+            "botanical-green": "#2F7D5B",
+            "on-secondary-fixed-variant": "#4b463c",
+            "amber-demo": "#FFF4DC",
+            "primary-fixed-dim": "#a5cecb",
+            "surface-dim": "#dcdad5",
+            "on-primary-fixed-variant": "#254d4b",
+            "tertiary-container": "#4b3000",
+            "surface-tint": "#3e6563",
+            "on-background": "#1c1c19",
+            "tertiary-fixed": "#ffddb1",
+            "on-primary": "#ffffff",
+            "secondary-container": "#eae1d3",
+            "error-container": "#ffdad6",
+            "primary": "#002624",
+            "surface-bright": "#fcf9f4",
+            "on-surface-variant": "#414847",
+            "mist-border": "#E2DCD0",
+            "on-primary-fixed": "#00201f",
+            "on-error": "#ffffff",
+            "surface": "#fcf9f4",
+            "charcoal-text": "#1F2523",
+            "on-primary-container": "#7ea6a3",
+            "outline-variant": "#c0c8c7",
+            "on-secondary-fixed": "#1f1b13",
+            "on-secondary": "#ffffff",
+            "surface-container-low": "#f6f3ee",
+            "secondary": "#635e53",
+            "primary-fixed": "#c0ebe7",
+            "surface-variant": "#e5e2dd",
+            "secondary-fixed-dim": "#cec5b8",
+            "on-surface": "#1c1c19",
+            "terracotta-alert": "#B5472F",
+            "inverse-primary": "#a5cecb",
+            "surface-white": "#FFFFFF",
+            "on-secondary-container": "#6a6459",
+            "surface-container-lowest": "#ffffff",
+            "inverse-on-surface": "#f3f0eb",
+            "on-tertiary-container": "#c6964f",
+            "on-tertiary-fixed": "#291800",
+            "on-tertiary": "#ffffff",
+            "surface-container-highest": "#e5e2dd",
+            "surface-container": "#f0ede9",
+            "secondary-fixed": "#eae1d3",
+            "on-tertiary-fixed-variant": "#624000",
+            "error": "#ba1a1a",
+            "teal-dark": "#0C2B29",
+            "background": "#fcf9f4"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-2xl": "3rem",
+            "space-sm": "0.5rem",
+            "space-xl": "2rem",
+            "space-lg": "1.5rem",
+            "margin-mobile": "1.25rem",
+            "gutter": "1.5rem",
+            "space-md": "1rem",
+            "margin": "2.5rem",
+            "gutter-mobile": "1rem",
+            "space-4xl": "7.5rem",
+            "space-3xl": "4.5rem",
+            "space-xs": "0.25rem"
+          },
+          "fontFamily": {
+            "title-sm": ["Playfair Display"],
+            "display-hero": ["Playfair Display"],
+            "button-text": ["Inter"],
+            "headline-md": ["Playfair Display"],
+            "body-md": ["Inter"],
+            "body-lg": ["Inter"],
+            "caption": ["Inter"],
+            "label-eyebrow": ["Inter"],
+            "headline-md-mobile": ["Playfair Display"],
+            "headline-lg-mobile": ["Playfair Display"],
+            "display-hero-mobile": ["Playfair Display"],
+            "headline-lg": ["Playfair Display"],
+            "body-sm": ["Inter"]
+          },
+          "fontSize": {
+            "title-sm": ["20px", { "lineHeight": "26px", "fontWeight": "600" }],
+            "display-hero": ["64px", { "lineHeight": "70px", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+            "button-text": ["15px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "500" }],
+            "headline-md": ["28px", { "lineHeight": "36px", "fontWeight": "500" }],
+            "body-md": ["16px", { "lineHeight": "27px", "fontWeight": "400" }],
+            "body-lg": ["18px", { "lineHeight": "30px", "fontWeight": "400" }],
+            "caption": ["13px", { "lineHeight": "20px", "fontWeight": "400" }],
+            "label-eyebrow": ["12px", { "lineHeight": "16px", "letterSpacing": "0.12em", "fontWeight": "600" }],
+            "headline-md-mobile": ["22px", { "lineHeight": "30px", "fontWeight": "500" }],
+            "headline-lg-mobile": ["28px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "500" }],
+            "display-hero-mobile": ["36px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "headline-lg": ["44px", { "lineHeight": "52px", "letterSpacing": "-0.015em", "fontWeight": "500" }],
+            "body-sm": ["14px", { "lineHeight": "22px", "fontWeight": "400" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .material-symbols-outlined.fill-icon {
+      font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    /* Subtle batik background grid texture with pure CSS */
+    .batik-subtle-overlay {
+      background-image: radial-gradient(#123C3A 0.65px, transparent 0.65px), radial-gradient(#B88A44 0.65px, #FAF7F2 0.65px);
+      background-size: 26px 26px;
+      background-position: 0 0, 13px 13px;
+      opacity: 0.05;
+    }
+    .custom-scrollbar::-webkit-scrollbar {
+      height: 4px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+      background: #c6964f;
+      border-radius: 9999px;
+    }
+  </style>
+</head>
+<body class="bg-background text-charcoal-text font-body-md antialiased relative selection:bg-secondary-container selection:text-primary">
+<!-- Ambient Batik Subtle Texture Layer -->
+<div class="fixed inset-0 pointer-events-none batik-subtle-overlay z-0"></div>
+<!-- SHARED COMPONENT: TopNavBar -->
+<header class="bg-surface dark:bg-surface border-b border-mist-border dark:border-outline-variant shadow-sm docked full-width top-0 sticky z-40">
+<div class="w-full max-w-[1200px] mx-auto px-margin-mobile md:px-margin h-20 flex items-center justify-between">
+<!-- Brand Logo -->
+<a class="font-headline-md text-headline-md text-primary dark:text-primary-fixed tracking-tight font-semibold flex items-center gap-2" href="#">
+<span>NusaStay</span>
+<span class="font-label-eyebrow text-label-eyebrow text-on-tertiary-container tracking-widest pl-1 border-l border-mist-border">JAWA TENGAH</span>
+</a>
+<!-- Desktop Nav Cluster -->
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-stone-muted dark:text-outline-variant font-button-text text-button-text transition-colors duration-200 hover:text-primary dark:hover:text-primary-fixed" href="#">Kamar &amp; Suite</a>
+<a class="text-stone-muted dark:text-outline-variant font-button-text text-button-text transition-colors duration-200 hover:text-primary dark:hover:text-primary-fixed" href="#">Pengalaman</a>
+<a class="text-stone-muted dark:text-outline-variant font-button-text text-button-text transition-colors duration-200 hover:text-primary dark:hover:text-primary-fixed" href="#">Fasilitas</a>
+<!-- Active Tab: Galeri / Visual Sanctuary -->
+<a class="text-primary dark:text-primary-fixed font-button-text text-button-text border-b-2 border-on-tertiary-container pb-1" href="#galeri">Galeri</a>
+<a class="text-stone-muted dark:text-outline-variant font-button-text text-button-text transition-colors duration-200 hover:text-primary dark:hover:text-primary-fixed" href="#">Lokasi</a>
+</nav>
+<!-- Trailing Action Cluster -->
+<div class="flex items-center gap-3">
+<a class="w-10 h-10 rounded-full border border-mist-border flex items-center justify-center text-primary hover:bg-secondary-container transition-colors duration-200" href="tel:+62293789012" title="Hubungi Resepsionis">
+<span class="material-symbols-outlined text-xl">call</span>
+</a>
+<button class="bg-primary-container text-on-primary hover:bg-teal-dark font-button-text text-button-text px-6 py-2.5 rounded-full shadow-sm active:scale-95 transition-all duration-150 flex items-center gap-2">
+<span>Reservasi Sekarang</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+</header>
+<!-- MAIN CANVAS -->
+<main class="relative z-10 max-w-[1200px] mx-auto px-margin-mobile md:px-margin pt-10 pb-space-4xl">
+<!-- Breadcrumb & Header Section -->
+<section class="mb-12">
+<!-- Breadcrumb -->
+<nav class="flex items-center gap-2 text-stone-muted font-body-sm text-body-sm mb-6">
+<a class="hover:text-primary transition-colors" href="#">Beranda</a>
+<span class="material-symbols-outlined text-xs">chevron_right</span>
+<span class="text-charcoal-text font-medium">Galeri Suaka</span>
+</nav>
+<!-- Eyebrow & Title Area -->
+<div class="max-w-3xl">
+<span class="inline-flex items-center gap-2 font-label-eyebrow text-label-eyebrow text-on-tertiary-container uppercase tracking-[0.2em] mb-3">
+<span class="w-2 h-2 rounded-full bg-on-tertiary-container inline-block"></span>
+          SUAKA VISUAL · MENOREH
+        </span>
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight mb-4">
+          Galeri Suaka Menoreh
+        </h1>
+<p class="font-body-lg text-body-lg text-stone-muted font-light leading-relaxed">
+          Menyusuri keheningan arsitektur kayu jati lawas, rimbun pakis pegunungan, dan kabut fajar yang menyelimuti perbukitan Menoreh. Sebuah catatan visual tentang kelembutan waktu dan tradisi tetirah Jawa Tengah.
+        </p>
+</div>
+<!-- Filter Bar Pills -->
+<div class="mt-10 flex flex-wrap items-center gap-3 pt-6 border-t border-mist-border">
+<!-- Active Filter: Semua Foto -->
+<button class="bg-primary-container text-on-primary px-5 py-2.5 rounded-full font-button-text text-button-text shadow-sm transition-all duration-200 flex items-center gap-2">
+<span>Semua Foto</span>
+<span class="text-xs bg-white/20 px-2 py-0.5 rounded-full font-sans">12</span>
+</button>
+<!-- Inactive Filter: Kamar & Bilik -->
+<button class="bg-secondary-fixed text-charcoal-text hover:bg-secondary-container px-5 py-2.5 rounded-full font-button-text text-button-text border border-mist-border transition-colors duration-200 flex items-center gap-2">
+<span>Kamar &amp; Bilik</span>
+<span class="text-xs bg-mist-border/60 px-2 py-0.5 rounded-full font-sans">4</span>
+</button>
+<!-- Inactive Filter: Fasilitas & Kuliner -->
+<button class="bg-secondary-fixed text-charcoal-text hover:bg-secondary-container px-5 py-2.5 rounded-full font-button-text text-button-text border border-mist-border transition-colors duration-200 flex items-center gap-2">
+<span>Fasilitas &amp; Kuliner</span>
+<span class="text-xs bg-mist-border/60 px-2 py-0.5 rounded-full font-sans">4</span>
+</button>
+<!-- Inactive Filter: Suasana & Alam -->
+<button class="bg-secondary-fixed text-charcoal-text hover:bg-secondary-container px-5 py-2.5 rounded-full font-button-text text-button-text border border-mist-border transition-colors duration-200 flex items-center gap-2">
+<span>Suasana &amp; Alam</span>
+<span class="text-xs bg-mist-border/60 px-2 py-0.5 rounded-full font-sans">4</span>
+</button>
+</div>
+</section>
+<!-- MASONRY GALLERY GRID (12 Curated Visuals) -->
+<section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="galeri">
+<!-- Item 1: Bale Ageng Pendopo (Featured Large Card) -->
+<div class="group relative bg-surface-white rounded-[20px] overflow-hidden border border-mist-border shadow-[0px_12px_32px_rgba(18,60,58,0.06)] hover:shadow-[0px_20px_48px_rgba(18,60,58,0.12)] transition-all duration-300 md:col-span-2 aspect-[16/9]">
+<img class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500 ease-out" data-alt="An expansive traditional Javanese Bale Ageng pendopo pavilion crafted from dark polished teak wood with intricate tumpang sari ceiling carvings. Morning sunlight streams through the open wooden colonnade into a calm courtyard with stone urns and lush ferns. Warm, peaceful architectural photography in an understated Central Java aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9-XOP0iDv5AgYGEQowtnCXCcyPyoPpVXlWkL6HwK-BvndJooSjYmxAUS9IwM6arDs29Z80JAigBlHDKYy2iJffy8CtTxiFYOG2z-Q3lP0t5HGX677LlZDQ618UtJpftUtsSIc10oZpHiy4LS-XW7usC2fnK7GW4PUOxrLVTRyium2tneiyu4rrTcOdbtI7yRxXiD3I9MbmVZxOq2LiM8_PF_gWWlElIQWdIBeuQJHoVUycB98RpEM8uEq9jD7AQDP8LoDwKr-3I4"/>
+<div class="absolute inset-0 bg-gradient-to-t from-teal-dark/90 via-teal-dark/30 to-transparent opacity-80 group-hover:opacity-95 transition-opacity duration-300 flex flex-col justify-end p-6">
+<div class="flex items-center justify-between">
+<div>
+<span class="font-label-eyebrow text-label-eyebrow text-tertiary-fixed tracking-wider uppercase mb-1 block">Fasilitas &amp; Arsitektur</span>
+<h3 class="font-headline-md text-headline-md text-surface-bright tracking-tight">Bale Ageng Pendopo &amp; Tiang Tumpang Sari</h3>
+<p class="font-body-sm text-body-sm text-outline-variant mt-1 line-clamp-1">Karya ukir kayu jati berusia ratusan tahun tempat berkumpul dan menikmati lantunan gamelan lembut.</p>
+</div>
+<button class="w-12 h-12 rounded-full bg-surface-white/10 backdrop-blur-md text-surface-bright flex items-center justify-center hover:bg-on-tertiary-container hover:text-surface transition-all group-hover:scale-105" title="Perbesar Foto">
+<span class="material-symbols-outlined text-2xl">zoom_in</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Item 2: Bilik Deluxe Teras Menoreh (Currently Active in Lightbox) -->
+<div class="group relative bg-surface-white rounded-[20px] overflow-hidden border-2 border-on-tertiary-container shadow-[0px_12px_32px_rgba(18,60,58,0.06)] hover:shadow-[0px_20px_48px_rgba(18,60,58,0.12)] transition-all duration-300 aspect-[4/3] ring-4 ring-on-tertiary-container/10">
+<img class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500 ease-out" data-alt="A serene boutique guestroom terrace overlooking the mist-filled Menoreh hills at dawn. Traditional terracotta tile flooring, hand-carved teak lounge chairs, a low wooden table with steaming jasmine tea in ceramic cups, and soft morning clouds creeping across lush emerald valleys." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_rAwokPbmEfKPEhLPeC5sCUJLRJnDjCLgfqETgznLVhPdErr2OV557ottUr9xioeqqLOiqPASuq4NmfGf6iaQm7oY_hJ_Z8WuGFt71USONavHv4xG_uUVPzVIdDbuM_G35nVu5BsjcZgujuEmOGbxZZpdUvRqJFgxY1ZVpAcBUIrlej86zPSi1glHNdCGZzOofaIRPp4aocLWEGNop8mmMRntlgfwxzrsOQT9AJzIpZrYfFDjl8U3RvmW0Zj83Bo5pFDVY_O3A_8"/>
+<!-- Active indicator badge -->
+<span class="absolute top-4 left-4 bg-teal-dark/80 backdrop-blur-md text-tertiary-fixed font-caption text-caption px-3 py-1 rounded-full border border-on-tertiary-container/40 flex items-center gap-1.5 z-10">
+<span class="w-1.5 h-1.5 rounded-full bg-on-tertiary-container animate-pulse"></span>
+          Aktif di Lightbox
+        </span>
+<div class="absolute inset-0 bg-gradient-to-t from-teal-dark/90 via-teal-dark/20 to-transparent opacity-85 group-hover:opacity-95 transition-opacity duration-300 flex flex-col justify-end p-5">
+<div class="flex items-center justify-between">
+<div>
+<span class="font-label-eyebrow text-label-eyebrow text-tertiary-fixed tracking-wider uppercase mb-1 block">Kamar &amp; Bilik</span>
+<h3 class="font-title-sm text-title-sm text-surface-bright">Bilik Deluxe Teras Menoreh</h3>
+</div>
+<button class="w-10 h-10 rounded-full bg-surface-white/10 backdrop-blur-md text-surface-bright flex items-center justify-center hover:bg-on-tertiary-container hover:text-surface transition-all" title="Buka di Lightbox">
+<span class="material-symbols-outlined text-xl">fullscreen</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Item 3: Kolam Mata Air Batu Kali -->
+<div class="group relative bg-surface-white rounded-[20px] overflow-hidden border border-mist-border shadow-[0px_12px_32px_rgba(18,60,58,0.06)] hover:shadow-[0px_20px_48px_rgba(18,60,58,0.12)] transition-all duration-300 aspect-[4/3]">
+<img class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500 ease-out" data-alt="A tranquil stone-lined natural spring swimming pool nestled amidst giant tropical ferns and moss-covered boulders. Pure crystal clear emerald water reflects the forest canopy, with teak timber sun loungers placed along the stone edge under dappled sunlight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAnCjXfCV492YREzdLu_lKakgkW1GGMNheobh_P0jBpeDLvVq75XvSmcn0bsTBTbocGFiCz5o0IH4aBGkQr-XKecl-SLnYXUTiXDYkq70he-cSebfYQQiy8CRXp7wiO3h0Q5qWUmFjuUUdVguZCE0fuj-5i5fLTrNeYGo-kWCVtJ6vAOBCJBTO_x77XC6u0GzB6zHs_7vUVTdE9EJwYlVbX1Pns1RsYVSrCsjZIVOMRPOiX4EFq2_oNbpBiuyV2y9aVbMmIjdibEpM"/>
+<div class="absolute inset-0 bg-gradient-to-t from-teal-dark/90 via-teal-dark/20 to-transparent opacity-80 group-hover:opacity-95 transition-opacity duration-300 flex flex-col justify-end p-5">
+<div class="flex items-center justify-between">
+<div>
+<span class="font-label-eyebrow text-label-eyebrow text-tertiary-fixed tracking-wider uppercase mb-1 block">Fasilitas &amp; Kuliner</span>
+<h3 class="font-title-sm text-title-sm text-surface-bright">Kolam Renang Batu Kali Alami</h3>
+</div>
+<button class="w-10 h-10 rounded-full bg-surface-white/10 backdrop-blur-md text-surface-bright flex items-center justify-center hover:bg-on-tertiary-container hover:text-surface transition-all" title="Perbesar Foto">
+<span class="material-symbols-outlined text-xl">zoom_in</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Item 4: Seduhan Teh Rempah & Wedang Jahe -->
+<div class="group relative bg-surface-white rounded-[20px] overflow-hidden border border-mist-border shadow-[0px_12px_32px_rgba(18,60,58,0.06)] hover:shadow-[0px_20px_48px_rgba(18,60,58,0.12)] transition-all duration-300 aspect-[4/3]">
+<img class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500 ease-out" data-alt="An artisanal brass tray holding steaming Indonesian spiced herbal tea and wedang jahe in textured earthenware cups, accompanied by palm sugar cubes and cinnamon sticks on a rustic teak wood table with soft linen napkin and warm ambient light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqCFqurGCncZO9vMvoP64EHTNP1_m5yS9OmZ64Vc64hzJ9y4RtlQeg6NoZjv6xI5XZyPI8Iysis4E4jS9i4rksivRpvZSpX9XmFLGUooDn6oYZLMtgYYPXGuXdXMMB-sILPKDnAwqGnD9zXZzE5TFETOGrIn7QkTTJkF49eE56F2jREmAeG5biEoaGbVsDJ6tprs3es4CLrLR4JQiV9IOyC_BN32m0O5EGrXSlyUqaVaN18Pq5oIOgIUGPVhSj6EzbLxrfZg4Jgbc"/>
+<div class="absolute inset-0 bg-gradient-to-t from-teal-dark/90 via-teal-dark/20 to-transparent opacity-80 group-hover:opacity-95 transition-opacity duration-300 flex flex-col justify-end p-5">
+<div class="flex items-center justify-between">
+<div>
+<span class="font-label-eyebrow text-label-eyebrow text-tertiary-fixed tracking-wider uppercase mb-1 block">Fasilitas &amp; Kuliner</span>
+<h3 class="font-title-sm text-title-sm text-surface-bright">Wedang Rempah di Beranda Kayu</h3>
+</div>
+<button class="w-10 h-10 rounded-full bg-surface-white/10 backdrop-blur-md text-surface-bright flex items-center justify-center hover:bg-on-tertiary-container hover:text-surface transition-all" title="Perbesar Foto">
+<span class="material-symbols-outlined text-xl">zoom_in</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Item 5: Gladak Kayu Jati Lawas -->
+<div class="group relative bg-surface-white rounded-[20px] overflow-hidden border border-mist-border shadow-[0px_12px_32px_rgba(18,60,58,0.06)] hover:shadow-[0px_20px_48px_rgba(18,60,58,0.12)] transition-all duration-300 aspect-[4/3]">
+<img class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500 ease-out" data-alt="An authentic restored antique Javanese Gladak wooden cabin cottage constructed from rich grained weathered teak. Wide verandah with linen curtains swaying gently, surrounded by fragrant lemongrass and frangipani blossoms under peaceful morning light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCarvkGU2yCx9FRqP6r6N8DJO1fDa77JH1QGEb5za9AhJ2P05KZdtfD24V9lttFHJuFmNbs4Tqjzzn4ibCvLygVKqti-GRRv-XBr6IY3FnfZYSPDtLVKdaoF-KHYSezgndy3dwjqStJycYso3tV1AUJmMh5hPRXL_GMjmBRp5JvSPs40m13Wd1B5LkdBTZjnpOANVZrJiCHwalnaPFHo0D6bTUkZVmyMghIoXiwh82q1eaZEs8ujU1FZ_lw2BvMhD6PvtUtOhZlYbY"/>
+<div class="absolute inset-0 bg-gradient-to-t from-teal-dark/90 via-teal-dark/20 to-transparent opacity-80 group-hover:opacity-95 transition-opacity duration-300 flex flex-col justify-end p-5">
+<div class="flex items-center justify-between">
+<div>
+<span class="font-label-eyebrow text-label-eyebrow text-tertiary-fixed tracking-wider uppercase mb-1 block">Kamar &amp; Bilik</span>
+<h3 class="font-title-sm text-title-sm text-surface-bright">Gladak Jati Aroma Cendana</h3>
+</div>
+<button class="w-10 h-10 rounded-full bg-surface-white/10 backdrop-blur-md text-surface-bright flex items-center justify-center hover:bg-on-tertiary-container hover:text-surface transition-all" title="Perbesar Foto">
+<span class="material-symbols-outlined text-xl">zoom_in</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Item 6: Sudut Meditasi Jalan Setapak Bebatuan Lumut -->
+<div class="group relative bg-surface-white rounded-[20px] overflow-hidden border border-mist-border shadow-[0px_12px_32px_rgba(18,60,58,0.06)] hover:shadow-[0px_20px_48px_rgba(18,60,58,0.12)] transition-all duration-300 aspect-[4/3]">
+<img class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500 ease-out" data-alt="A contemplative stone stepping pathway winding through lush mossy gardens and bamboo groves. Dappled sunlight filters through the green canopy onto wet river stones, leading toward an open-air wooden meditation pavilion with subtle incense smoke curling into the air." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPdd-e0qWb1g12BRGX2g_0xrXLOZMcp7LDX73JruhLWs_ZRNGOlBAtCeHPXP_gRj02P4OA2bSV5rd7O2Cb8BRb2oFk4SGMNqlZTPG-KlGtI1hgIw50Wa88pK2igv6J9fkgnMJVQVoWOwQ8pUE_WDjDoxLgY6fs15m2Xi0DA2UOTvlifjBWsptFst1l9ScU69DULFQUhDzm9wF9sbISM2uj8n52GU577tVtILBgdzJFqptApmrVMkfum0s1OprVePyWX7y8Hvy62ew"/>
+<div class="absolute inset-0 bg-gradient-to-t from-teal-dark/90 via-teal-dark/20 to-transparent opacity-80 group-hover:opacity-95 transition-opacity duration-300 flex flex-col justify-end p-5">
+<div class="flex items-center justify-between">
+<div>
+<span class="font-label-eyebrow text-label-eyebrow text-tertiary-fixed tracking-wider uppercase mb-1 block">Suasana &amp; Alam</span>
+<h3 class="font-title-sm text-title-sm text-surface-bright">Jalan Setapak Meditasi Lumut</h3>
+</div>
+<button class="w-10 h-10 rounded-full bg-surface-white/10 backdrop-blur-md text-surface-bright flex items-center justify-center hover:bg-on-tertiary-container hover:text-surface transition-all" title="Perbesar Foto">
+<span class="material-symbols-outlined text-xl">zoom_in</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Item 7: Heritage Joglo Suite dengan Kolam Pribadi (Wide Span) -->
+<div class="group relative bg-surface-white rounded-[20px] overflow-hidden border border-mist-border shadow-[0px_12px_32px_rgba(18,60,58,0.06)] hover:shadow-[0px_20px_48px_rgba(18,60,58,0.12)] transition-all duration-300 md:col-span-2 aspect-[16/9]">
+<img class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500 ease-out" data-alt="A luxurious Heritage Joglo master bedroom featuring a grand four-poster teak bed draped with sheer white mosquito netting. Glass French doors open directly onto a private turquoise plunge pool surrounded by tropical vegetation and weathered stone carvings under warm golden hour light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRSm7TD6IAiozE5fdiB88osG10U5XUE5OhOcMiueMPWocQFuEuMtE7dRNGybAG4N9ZJeH3OPqJgoJUk44mzSf1sbu-ziF2v8qh2FSSVdLFetZKPMw3mJuJ1ty74tc3FIWFQHxJAROt4EYrauQXJeSM2l4LxNB5KMm5dGRGlo3U0n22a9U5hS5P8KR_B4vRAqsJBCLTGzclrmnAi65I3n-oirFBeoSqBADdgmffb_7AzUqorHbSiuOHH63xblg1PYkPoJyxRrVM0UI"/>
+<div class="absolute inset-0 bg-gradient-to-t from-teal-dark/90 via-teal-dark/20 to-transparent opacity-80 group-hover:opacity-95 transition-opacity duration-300 flex flex-col justify-end p-6">
+<div class="flex items-center justify-between">
+<div>
+<span class="font-label-eyebrow text-label-eyebrow text-tertiary-fixed tracking-wider uppercase mb-1 block">Kamar &amp; Bilik</span>
+<h3 class="font-headline-md text-headline-md text-surface-bright tracking-tight">Heritage Joglo Suite &amp; Kolam Pribadi</h3>
+<p class="font-body-sm text-body-sm text-outline-variant mt-1 line-clamp-1">Privasi mutlak berbalut kelambu sutra putih, menghadap langsung ke taman tersembunyi.</p>
+</div>
+<button class="w-12 h-12 rounded-full bg-surface-white/10 backdrop-blur-md text-surface-bright flex items-center justify-center hover:bg-on-tertiary-container hover:text-surface transition-all group-hover:scale-105" title="Perbesar Foto">
+<span class="material-symbols-outlined text-2xl">zoom_in</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Item 8: Pawon Tradisional & Sarapan Organik -->
+<div class="group relative bg-surface-white rounded-[20px] overflow-hidden border border-mist-border shadow-[0px_12px_32px_rgba(18,60,58,0.06)] hover:shadow-[0px_20px_48px_rgba(18,60,58,0.12)] transition-all duration-300 aspect-[4/3]">
+<img class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500 ease-out" data-alt="An artisanal open-air traditional Javanese hearth kitchen known as pawon, displaying freshly harvested organic vegetables, terracotta pots, woven bamboo baskets filled with steamed sticky rice treats, and fresh tropical fruits bathed in soft morning daylight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUUZOzqC7tAG3REk5DOcDq4MH_ryRjRKQZVb7GoAldbZNLAWwJOF8n63Adl7EWThfaZC7Y36dAlQR8GBnfKJC2ZVyE2SEcm-DZwDX504AUkTDfMrXxB0n4t7JnLIXooJZtdrz-TLAimahhW9WAUdZyxEeqA7g-6j06bI_Wvi5igQIxh1ZKoHd8x1rZfHlg0ntjbl50fCKAE5OAgt4QLLhknDYcoM_Udol6eqctlk6jfAYQNM8SUddYSdzKIXYcbrUSlCrX86WbTc8"/>
+<div class="absolute inset-0 bg-gradient-to-t from-teal-dark/90 via-teal-dark/20 to-transparent opacity-80 group-hover:opacity-95 transition-opacity duration-300 flex flex-col justify-end p-5">
+<div class="flex items-center justify-between">
+<div>
+<span class="font-label-eyebrow text-label-eyebrow text-tertiary-fixed tracking-wider uppercase mb-1 block">Fasilitas &amp; Kuliner</span>
+<h3 class="font-title-sm text-title-sm text-surface-bright">Pawon &amp; Sajian Panen Lokal</h3>
+</div>
+<button class="w-10 h-10 rounded-full bg-surface-white/10 backdrop-blur-md text-surface-bright flex items-center justify-center hover:bg-on-tertiary-container hover:text-surface transition-all" title="Perbesar Foto">
+<span class="material-symbols-outlined text-xl">zoom_in</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Item 9: Bak Rendam Teraso Semi-Terbuka -->
+<div class="group relative bg-surface-white rounded-[20px] overflow-hidden border border-mist-border shadow-[0px_12px_32px_rgba(18,60,58,0.06)] hover:shadow-[0px_20px_48px_rgba(18,60,58,0.12)] transition-all duration-300 aspect-[4/3]">
+<img class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500 ease-out" data-alt="A bespoke oval terrazzo soaking bathtub in an open-air courtyard sanctuary, filled with warm water sprinkled with fragrant white jasmine and frangipani petals. Teak slatted partition wall and a small brass water spout creating a relaxing zen atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwgnHYuqh9Yi39fiLq0KCRV7eZfwUw6UqfyJYe6vAd2RcJ0a6RnPk0WaEaYG3Xv2WMBDN5hCl91I613RQoYLXeTzZ4lkjQAbZabxt-zXpx6i6K6QR8Ihg1EC2d78sI9807YuT5K-UhzpgQM2opv0fRsl1Dpf7zgOvPQCt1HOFTzxkz795U72jtWsU-leUWwY5mAMO2dI5te18Mrn6OK_NZukoiClZ-BawwaHrUB3oEsOfRGqqMQQaQ_Mh_90fgX5Ydt2td2814aEU"/>
+<div class="absolute inset-0 bg-gradient-to-t from-teal-dark/90 via-teal-dark/20 to-transparent opacity-80 group-hover:opacity-95 transition-opacity duration-300 flex flex-col justify-end p-5">
+<div class="flex items-center justify-between">
+<div>
+<span class="font-label-eyebrow text-label-eyebrow text-tertiary-fixed tracking-wider uppercase mb-1 block">Kamar &amp; Bilik</span>
+<h3 class="font-title-sm text-title-sm text-surface-bright">Bak Rendam Teraso Bunga Melati</h3>
+</div>
+<button class="w-10 h-10 rounded-full bg-surface-white/10 backdrop-blur-md text-surface-bright flex items-center justify-center hover:bg-on-tertiary-container hover:text-surface transition-all" title="Perbesar Foto">
+<span class="material-symbols-outlined text-xl">zoom_in</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Item 10: Pendar Lentera Senja Temaram -->
+<div class="group relative bg-surface-white rounded-[20px] overflow-hidden border border-mist-border shadow-[0px_12px_32px_rgba(18,60,58,0.06)] hover:shadow-[0px_20px_48px_rgba(18,60,58,0.12)] transition-all duration-300 aspect-[4/3]">
+<img class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500 ease-out" data-alt="Dusk twilight falling over a Javanese boutique inn garden. Warm glowing brass oil lanterns and woven bamboo lamps illuminate a stone terrace with low wooden stools, with deep blue evening sky and misty hill outlines in the distance." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcIA6uus7_Q4-nKtMVkvSYiYuyfyi2lxOPthDVedaHmXuLVZoBP8gq44FlTwJuo8xGmGyK0HKj3PmpNlTuRv5R8osEN6LIJuKvRq4Wdk2YbgIq-j91nVkhQfKWYGO5NsgdtN9RHSBNvIDS28COTlQusEswlB-y4kvtDaSdGkokMST9CgJvSw8Ne-MzPM6LPKKpGSraQ0YvCyj5Lqq624YfHZX3DDN9OJDOig1a9-xehGh2VG4c1e0BYnC3CwgoNvColO3C2tS_VZY"/>
+<div class="absolute inset-0 bg-gradient-to-t from-teal-dark/90 via-teal-dark/20 to-transparent opacity-80 group-hover:opacity-95 transition-opacity duration-300 flex flex-col justify-end p-5">
+<div class="flex items-center justify-between">
+<div>
+<span class="font-label-eyebrow text-label-eyebrow text-tertiary-fixed tracking-wider uppercase mb-1 block">Suasana &amp; Alam</span>
+<h3 class="font-title-sm text-title-sm text-surface-bright">Pendar Lentera Pelataran Senja</h3>
+</div>
+<button class="w-10 h-10 rounded-full bg-surface-white/10 backdrop-blur-md text-surface-bright flex items-center justify-center hover:bg-on-tertiary-container hover:text-surface transition-all" title="Perbesar Foto">
+<span class="material-symbols-outlined text-xl">zoom_in</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Item 11: Area Baca & Kerja Hening -->
+<div class="group relative bg-surface-white rounded-[20px] overflow-hidden border border-mist-border shadow-[0px_12px_32px_rgba(18,60,58,0.06)] hover:shadow-[0px_20px_48px_rgba(18,60,58,0.12)] transition-all duration-300 aspect-[4/3]">
+<img class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500 ease-out" data-alt="A quiet reading corner with a solid teak writing desk, antique brass desk lamp, and woven rattan armchair next to floor-to-ceiling glass windows framing panoramic forest views of Menoreh hills. Books, natural linen paper notebook, and peaceful natural daylight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAHFNDPskXMDS1IVvlFULK52NIlYq46eESyATpUctFq_JQrlA1Go_GeFgpnC4I90HHrPrFrm2RtpsF0d8qCnb3IcLSz6AOHrrhXe9G2KUSXXyDogP4e15XAn8nSdBu-xtwDSfht-36TzpwBsSPIFetjP23ZPgaye5sFW4BbFsFQWjH9ZUggnPSc4cTCGLHjHbtcWRNXDkJ-YSX4DtwGCqay26f2mzPz2dDzuCV4cXO6XFeJdPWipwo_J8UsNnHluF2QcxoVhrm64u4"/>
+<div class="absolute inset-0 bg-gradient-to-t from-teal-dark/90 via-teal-dark/20 to-transparent opacity-80 group-hover:opacity-95 transition-opacity duration-300 flex flex-col justify-end p-5">
+<div class="flex items-center justify-between">
+<div>
+<span class="font-label-eyebrow text-label-eyebrow text-tertiary-fixed tracking-wider uppercase mb-1 block">Fasilitas &amp; Arsitektur</span>
+<h3 class="font-title-sm text-title-sm text-surface-bright">Pojok Baca &amp; Kontemplasi Hening</h3>
+</div>
+<button class="w-10 h-10 rounded-full bg-surface-white/10 backdrop-blur-md text-surface-bright flex items-center justify-center hover:bg-on-tertiary-container hover:text-surface transition-all" title="Perbesar Foto">
+<span class="material-symbols-outlined text-xl">zoom_in</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Item 12: Panorama Kabut Lembah Menoreh -->
+<div class="group relative bg-surface-white rounded-[20px] overflow-hidden border border-mist-border shadow-[0px_12px_32px_rgba(18,60,58,0.06)] hover:shadow-[0px_20px_48px_rgba(18,60,58,0.12)] transition-all duration-300 aspect-[4/3]">
+<img class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500 ease-out" data-alt="An ethereal wide morning panorama of rolling Menoreh hills bathed in golden dawn light with dense sea of white mist covering the forested valley floor. Silhouettes of tall palm trees emerging from fog against a tranquil pastel sky." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLBCXdDh3VrWkdJ5WZBCI1wwjTL3aHEF0rQKx5U6GrrZUJHDzFtlBLv2AbuTnzLeP1MTprnNSLJiHZH8Cbt_YSXn7cyYK9Yy5MnO9OB-963KLhXyIMCipMofyj5FWGx1kfBAJ4vXNitT5mCOc1wj21_vQpkxPQ56iCScrLvgW6uMQZ7SorSdn2Cc2lS85NkC-ofltMq_QwRrwJf9dr_Fi_DoWUgK5EMK9Co3DO9CzlQYqWi7zvQv1mWxFlbRw7v1Fp0s3J0uunmSQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-teal-dark/90 via-teal-dark/20 to-transparent opacity-80 group-hover:opacity-95 transition-opacity duration-300 flex flex-col justify-end p-5">
+<div class="flex items-center justify-between">
+<div>
+<span class="font-label-eyebrow text-label-eyebrow text-tertiary-fixed tracking-wider uppercase mb-1 block">Suasana &amp; Alam</span>
+<h3 class="font-title-sm text-title-sm text-surface-bright">Panorama Kabut Fajar Menoreh</h3>
+</div>
+<button class="w-10 h-10 rounded-full bg-surface-white/10 backdrop-blur-md text-surface-bright flex items-center justify-center hover:bg-on-tertiary-container hover:text-surface transition-all" title="Perbesar Foto">
+<span class="material-symbols-outlined text-xl">zoom_in</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION: CALL TO ACTION (Reservasi Keheningan) -->
+<section class="mt-space-4xl bg-primary-container rounded-[24px] text-surface-bright p-8 md:p-14 relative overflow-hidden shadow-[0px_16px_40px_rgba(18,60,58,0.12)]">
+<!-- Decorative Batik Ring Graphic in Teal Container -->
+<div class="absolute -right-12 -bottom-12 w-80 h-80 rounded-full border border-surface-white/10 pointer-events-none"></div>
+<div class="absolute -right-6 -bottom-6 w-60 h-60 rounded-full border border-surface-white/10 pointer-events-none"></div>
+<div class="relative z-10 max-w-2xl">
+<span class="font-label-eyebrow text-label-eyebrow text-tertiary-fixed tracking-[0.2em] uppercase mb-3 inline-block">
+          MENGINAP &amp; MENEMUKAN KETENANGAN
+        </span>
+<h2 class="font-headline-lg text-headline-lg text-surface-bright tracking-tight mb-4">
+          Rasakan Langsung Keheningan Suaka Menoreh
+        </h2>
+<p class="font-body-md text-body-md text-on-primary-container mb-8 font-light">
+          Setiap sudut dirancang untuk merestorasi jiwa Anda. Kuota terbatas hanya 8 bilik tetirah eksklusif guna menjaga keheningan alam dan kenyamanan personal setiap tamu.
+        </p>
+<div class="flex flex-wrap items-center gap-4">
+<button class="bg-secondary-fixed text-primary font-button-text text-button-text px-8 py-3.5 rounded-full hover:bg-surface-bright active:scale-95 transition-all duration-200 shadow-md flex items-center gap-2">
+<span>Ajukan Reservasi Sekarang</span>
+<span class="material-symbols-outlined text-base">calendar_month</span>
+</button>
+<a class="border border-surface-white/30 text-surface-bright hover:bg-white/10 font-button-text text-button-text px-7 py-3.5 rounded-full active:scale-95 transition-all duration-200 flex items-center gap-2" href="https://wa.me/628123456789">
+<span class="material-symbols-outlined text-base">chat</span>
+<span>Konsultasi via WhatsApp</span>
+</a>
+</div>
+</div>
+</section>
+</main>
+<!-- ========================================================================= -->
+<!-- LIGHTBOX MODAL (OPEN STATE DEMONSTRATION) -->
+<!-- ========================================================================= -->
+<div class="fixed inset-0 z-50 flex items-center justify-center p-4 md:p-8 bg-teal-dark/95 backdrop-blur-md" id="lightbox-modal">
+<!-- Lightbox Main Frame Container -->
+<div class="relative w-full max-w-5xl bg-surface-white/5 border border-surface-white/10 rounded-[24px] p-4 md:p-6 shadow-[0px_24px_64px_rgba(0,0,0,0.6)] flex flex-col max-h-[962px]">
+<!-- Top Action Bar (Header Modal) -->
+<div class="flex items-center justify-between pb-4 border-b border-surface-white/10">
+<!-- Breadcrumb / Tag inside Lightbox -->
+<div class="flex items-center gap-3">
+<span class="bg-tertiary-container/80 text-tertiary-fixed border border-on-tertiary-container/30 font-caption text-caption px-3 py-1 rounded-full uppercase tracking-wider">
+            Kamar &amp; Bilik
+          </span>
+<span class="text-surface-bright/60 text-sm font-caption">Bilik Deluxe Teras Menoreh</span>
+</div>
+<!-- Close Button with ESC label -->
+<div class="flex items-center gap-3">
+<span class="hidden md:inline-block text-surface-bright/50 font-caption text-caption">Tekan Esc untuk menutup</span>
+<button class="w-10 h-10 rounded-full bg-surface-white/15 hover:bg-surface-white/30 text-surface-bright flex items-center justify-center transition-all duration-150 active:scale-90" title="Tutup Lightbox (Esc)">
+<span class="material-symbols-outlined text-2xl">close</span>
+</button>
+</div>
+</div>
+<!-- Main Photo & Navigation Cluster -->
+<div class="relative flex-1 my-4 flex items-center justify-center overflow-hidden rounded-[16px] bg-black/40">
+<!-- High Resolution Main Display Image -->
+<img class="max-h-[532px] md:max-h-[593px] w-full object-contain rounded-[16px]" data-alt="Crisp close-up shot of Bilik Deluxe Teras Menoreh at sunrise. Sunbeams cutting through morning fog, wooden verandah overlooking forested hills, terracotta floor, steaming porcelain teacup, and peaceful stillness." src="https://lh3.googleusercontent.com/aida-public/AB6AXuALSlmBPOL1eB6ipbV1oQTU-ABr3cWUyR53hPaYVoKSzaiE1wPO3v0_lVepDmhXSN9NuYO6KHDQIvqyi-P5RUqD_EkFO8_uUn5dCbeObN52Y1wMV5rovvVyVcp3cAIPOTI4dxwxZXanjBeT3J_F1E9UMeXQ1cOwcf2Z4q9RtU7ldBnt8Bhm39602ND5vgZgHi3sLA3DMZyL0zoD7xb_XPhwPPZMjUEbX875NPKEPdp4nzUXrKJZAfrm3-btYYYMKnD01ixTB6bSZGk"/>
+<!-- Previous Navigation Button -->
+<button class="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-teal-dark/70 hover:bg-teal-dark text-surface-bright border border-surface-white/20 backdrop-blur-md flex items-center justify-center transition-all duration-150 active:scale-90 shadow-lg hover:border-on-tertiary-container" title="Foto Sebelumnya">
+<span class="material-symbols-outlined text-2xl">arrow_back</span>
+</button>
+<!-- Next Navigation Button -->
+<button class="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-teal-dark/70 hover:bg-teal-dark text-surface-bright border border-surface-white/20 backdrop-blur-md flex items-center justify-center transition-all duration-150 active:scale-90 shadow-lg hover:border-on-tertiary-container" title="Foto Selanjutnya">
+<span class="material-symbols-outlined text-2xl">arrow_forward</span>
+</button>
+</div>
+<!-- Bottom Meta & Caption Bar -->
+<div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 pt-3 pb-2 border-t border-surface-white/10">
+<div class="max-w-2xl">
+<div class="flex items-center gap-2 mb-1">
+<h4 class="font-title-sm text-title-sm text-surface-bright font-medium">Deluxe Teras Menoreh — Fajar di Balik Kabut Lembah</h4>
+</div>
+<p class="font-body-sm text-body-sm text-outline-variant font-light">
+            Menikmati semilir hawa sejuk pagi hari dengan secangkir teh melati hangat di teras pribadi berlantai terakota. Menghadap langsung lanskap lembah perbukitan purba Menoreh.
+          </p>
+</div>
+<!-- Photo Counter Badge -->
+<div class="shrink-0 flex items-center gap-3">
+<div class="px-4 py-1.5 rounded-full bg-tertiary-container/90 border border-on-tertiary-container/40 text-tertiary-fixed font-button-text text-button-text flex items-center gap-1.5 shadow-sm">
+<span class="font-semibold">3</span>
+<span class="text-surface-bright/40">/</span>
+<span>12</span>
+</div>
+</div>
+</div>
+<!-- Quick Thumbnail Navigation Strip -->
+<div class="pt-3 overflow-x-auto custom-scrollbar flex items-center gap-2.5">
+<!-- Thumb 1 -->
+<button class="w-16 h-12 rounded-lg overflow-hidden shrink-0 border border-surface-white/20 opacity-50 hover:opacity-100 transition-opacity">
+<img class="w-full h-full object-cover" data-alt="Thumbnail view of Bale Ageng pendopo pavilion teak wood carvings central java architecture." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDMh173i3rZKjRGRe2_aSa1h_mauZUb6pJ3EFma3UYMWtr9CmfW_Or48IHRhalhP9CoeaS2tFK8rzIvpr610ZcWLUDEdrPWkKqZWhRuyTsQXsexxrbYnLv06NyriHQrNDoRms28sMtIVkZHu_csbu6hHOa6aI_J9-g-D2vta01e7ALors-ygUqrck_aOS1fHma6MZDHMfIvNEJY_sIPZuJgL2bFnd45nbJb8AqmCSkIqBL4Sc8_h-un3g6nc8XFmgByLTZgGxSJv8"/>
+</button>
+<!-- Thumb 2 -->
+<button class="w-16 h-12 rounded-lg overflow-hidden shrink-0 border border-surface-white/20 opacity-50 hover:opacity-100 transition-opacity">
+<img class="w-full h-full object-cover" data-alt="Thumbnail view of stone spring swimming pool framed by ferns and moss boulders." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdZpbjrOkwbsbwKgJnDoAepnBBTR0ta4aSfdxN_ImUlgk2l7BeXeFua4ZHNqYgvnOPKcqOneY_l5izuLSk6GnNOnt9oFYp_YKv83fkKPyPkq-VMPIadmVuMdHOVY8F_xfo9Dv7-iaR4CEvIJ9-jFWuuUElI71FFFD51fUENVN9zqBERXDO1IhCObCEFpwCJX39Y23mYd2idHX6irLkoe_MY4DYcnEyzH8d3ibdVPHvgAIW7H2gh_9MMwk3x9LI4COvwSKv5wEPXtU"/>
+</button>
+<!-- Thumb 3 (Active) -->
+<button class="w-16 h-12 rounded-lg overflow-hidden shrink-0 border-2 border-on-tertiary-container ring-2 ring-on-tertiary-container/40 opacity-100 transition-all scale-105">
+<img class="w-full h-full object-cover" data-alt="Thumbnail view of Bilik Deluxe terrace overlooking misty mountain sunrise." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAl30fANy-M7bUjHOAXVhWBqQRpm3bQBQ2hWewcBg2a8GqgdrOeKC0S758rs8V0dPmv29jsoihdsvQyp5RwjMdePFZ4HhYely4-iuCLe_4vH0waOPu1GJpNRTrAvkVDXOO0fi0Ht4sCT6c8TIcmL0F9Oh_zQLc5cnFF81z6g0c6M3ZfYqFklBvw6OxowFfgX_fTMDhRDpKSTNicBZvkrT0zSNkG0S0aS0fWJSfS3Iqsv5spFCgrhETBZoqQlNiAKwwWTc2DgxNKwYA"/>
+</button>
+<!-- Thumb 4 -->
+<button class="w-16 h-12 rounded-lg overflow-hidden shrink-0 border border-surface-white/20 opacity-50 hover:opacity-100 transition-opacity">
+<img class="w-full h-full object-cover" data-alt="Thumbnail view of spiced herbal tea wedang jahe on brass tray and rustic table." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD59vFKlR2AR7nsjeh_f98VJvTsBC15xEoYY7kOJYnIsEIXAe-57MMno2jx1wGkbjqTcRN4cDrPwLyP3UWUOZziCX8PGrGlbBYO0_3WE3yXrB5k9YQ6ckXaESS9y-KuVb-X1NuW7QyCW7GmychSDjWEf_7jEsczW85FjidYMsXSiMZM2sdJALos4Opf-23L7ZgijIMvl5ccB_WVPG-loBuTxTvM_Pjd6jq6v25fo-F0b85atQpH8rsPkILcHhktn1QWYFq0gQUEClE"/>
+</button>
+<!-- Thumb 5 -->
+<button class="w-16 h-12 rounded-lg overflow-hidden shrink-0 border border-surface-white/20 opacity-50 hover:opacity-100 transition-opacity">
+<img class="w-full h-full object-cover" data-alt="Thumbnail view of Gladak wooden cabin cottage amidst fragrant plants and frangipani." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnSU45Imevj7EBJgogeRnNaiQbNoYfA5UGDbeAFv2wsxBScqsxgeupYMGcjthiRIX7apQgB0Te_Ka7-OUJLfeBD2nQnbA_X0iLs8bAPmAWfRxgPy5CE47slZAqeyIYjfEOLwk69w1ai_I-Lzi3FThgKsxu_ksICLosE2t2CbAu5zcO92374_pzurmxd9fkPPKhiuCWAzE-o10BHVYnnpntLbgIyevI4M82urBMUrir8nOF1CbdcTkiUgE6MQiqCyOVdXaGDe94AHE"/>
+</button>
+<!-- Thumb 6 -->
+<button class="w-16 h-12 rounded-lg overflow-hidden shrink-0 border border-surface-white/20 opacity-50 hover:opacity-100 transition-opacity">
+<img class="w-full h-full object-cover" data-alt="Thumbnail view of stone moss meditation pathway with bamboo forest Central Java." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyayAkgoxGckWIZexpbnjb0YhgqRC1ZfHmG3f7MoPg9i7JZhyQVZysWZfKicshe11Zk3ZRyAxVo9XGYN-f4vra082AkCARQobuNyM_5iDJWUQz9QAQnio89Wc80tIL6OdY28Lz5u2z06NkGSrfGzaqoCt8vm4VMP7uqMFRBoAO7-XmvrklwC4dckF1VruotSZeffeBDuc8ZmEHktxNw7HfYwdWghmJtiey9RbbxHrs9_1crL5gZPm_cig9TZ8FJfHgInn8wTx8bzE"/>
+</button>
+<!-- Thumb 7 -->
+<button class="w-16 h-12 rounded-lg overflow-hidden shrink-0 border border-surface-white/20 opacity-50 hover:opacity-100 transition-opacity">
+<img class="w-full h-full object-cover" data-alt="Thumbnail view of Heritage Joglo suite bedroom with private pool terrace." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfJ6VZ3831T2Hbfzf4Ws_HKuUz86yu5hWkGnQHKBF-6kiyqMpZ6P-HuI7pe0E5Qu10iUVZFAuJjt7aY4EW722LO2_e6p01oeAZEC_vHHZerRex6SUnhF66L9hizQccOPGQU2TVfbApCWGuNTsIN6LyvNP2QDz4fEdyLt-o0iZ782NsQdD2LwPqOll3FEKUw11M4iKoJs4pIENMDiOXObzupUdgBXjmBXytSRl_OyLoxaSglHpVzZbM3Jh3kR0JcavywZ92whTpVf4"/>
+</button>
+<!-- Thumb 8 -->
+<button class="w-16 h-12 rounded-lg overflow-hidden shrink-0 border border-surface-white/20 opacity-50 hover:opacity-100 transition-opacity">
+<img class="w-full h-full object-cover" data-alt="Thumbnail view of traditional pawon hearth kitchen with fresh local organic harvest." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHFuH03WOYsrRdnFQRimgTZGiNWgEDSPtlHw_vV_jfRiAtjV1iioRLsh74gORH5hoAI_6ew8M3l640ZgNPwKa86hcLNzkzwIa5uR0Wt8lH75lS71kdcB_DZvHlpQPDSvjlvmDQHmg3A2oXJtslE0M9xaZPadZ618S9t_h78zi-oj85NoI8yDXarge6wlXRaLbyH1SBRgzFVlTAkIbSl9opMoHp3KMI6HIz2PPmRazAjCVYtsQqJxwVOJQJFPmigKmFmOBB01X4l8A"/>
+</button>
+</div>
+</div>
+</div>
+<!-- FLOATING ACTION BUTTON: WHATSAPP ASSISTANT -->
+<a class="fixed bottom-6 right-6 z-40 w-14 h-14 rounded-full bg-teal-dark hover:bg-primary-container text-surface-bright flex items-center justify-center shadow-[0px_16px_36px_rgba(18,60,58,0.25)] border border-on-tertiary-container/30 hover:scale-105 active:scale-95 transition-all duration-200 group" href="https://wa.me/628123456789" rel="noopener noreferrer" target="_blank" title="Hubungi Resepsionis via WhatsApp">
+<span class="material-symbols-outlined text-2xl group-hover:rotate-12 transition-transform">chat</span>
+</a>
+<!-- SHARED COMPONENT: Footer -->
+<footer class="bg-teal-dark dark:bg-teal-dark border-t border-primary-container dark:border-primary-container docked full-width bottom flat no shadows mt-space-4xl">
+<div class="w-full max-w-[1200px] mx-auto px-margin-mobile md:px-margin py-space-2xl">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-10 border-b border-primary-container/80 text-surface-bright">
+<!-- Col 1: Brand & Filosofi -->
+<div class="md:col-span-1">
+<div class="font-headline-md text-headline-md text-surface-bright tracking-tight font-semibold mb-3">
+            NusaStay
+          </div>
+<p class="font-body-sm text-body-sm text-outline-variant font-light mb-4">
+            Boutique Inn &amp; Suaka Tetirah Jawa Tengah. Harmoni kayu jati pusaka, gemericik mata air, dan ketenangan perbukitan Menoreh.
+          </p>
+<div class="inline-flex items-center gap-2 bg-primary-container/80 px-3 py-1.5 rounded-full text-xs text-tertiary-fixed border border-surface-white/10">
+<span class="w-2 h-2 rounded-full bg-botanical-green"></span>
+            Layanan Tamu 24 Jam
+          </div>
+</div>
+<!-- Col 2: Alamat & Kontak -->
+<div>
+<h4 class="font-title-sm text-title-sm text-surface-bright mb-3">Suaka Menoreh</h4>
+<p class="font-body-sm text-body-sm text-outline-variant font-light leading-relaxed mb-2">
+            Desa Wisata Perbukitan Menoreh, Borobudur, Jawa Tengah 56553, Indonesia
+          </p>
+<p class="font-body-sm text-body-sm text-outline-variant font-light">
+            Telp: +62 293 789 012<br/>
+            Surat: suaka@nusastay.id
+          </p>
+</div>
+<!-- Col 3: Navigasi Cepat -->
+<div>
+<h4 class="font-title-sm text-title-sm text-surface-bright mb-3">Eksplorasi</h4>
+<ul class="space-y-2 font-body-sm text-body-sm">
+<li><a class="text-outline-variant dark:text-outline-variant hover:text-surface-bright transition-colors duration-200" href="#">Kamar &amp; Suite</a></li>
+<li><a class="text-outline-variant dark:text-outline-variant hover:text-surface-bright transition-colors duration-200" href="#">Pengalaman Budaya</a></li>
+<li><a class="text-outline-variant dark:text-outline-variant hover:text-surface-bright transition-colors duration-200" href="#">Bale Kuliner Pawon</a></li>
+<li><a class="text-surface-bright dark:text-surface-bright font-medium underline underline-offset-4" href="#galeri">Galeri Suaka</a></li>
+<li><a class="text-outline-variant dark:text-outline-variant hover:text-surface-bright transition-colors duration-200" href="#">Peta &amp; Akses Lokasi</a></li>
+</ul>
+</div>
+<!-- Col 4: Informasi Kebijakan & Bantuan -->
+<div>
+<h4 class="font-title-sm text-title-sm text-surface-bright mb-3">Kebijakan &amp; Bantuan</h4>
+<ul class="space-y-2 font-body-sm text-body-sm">
+<li><a class="text-outline-variant dark:text-outline-variant hover:text-surface-bright transition-colors duration-200" href="#">Kebijakan Privasi</a></li>
+<li><a class="text-outline-variant dark:text-outline-variant hover:text-surface-bright transition-colors duration-200" href="#">Syarat &amp; Ketentuan Reservasi</a></li>
+<li><a class="text-outline-variant dark:text-outline-variant hover:text-surface-bright transition-colors duration-200" href="#">Panduan Tamu</a></li>
+<li><a class="text-outline-variant dark:text-outline-variant hover:text-surface-bright transition-colors duration-200" href="#">Bantuan &amp; FAQ</a></li>
+</ul>
+</div>
+</div>
+<!-- Bottom Copyright & Portofolio Disclaimer -->
+<div class="pt-6 flex flex-col md:flex-row items-center justify-between text-outline-variant font-caption text-caption gap-4">
+<div>
+          © 2025 NusaStay Boutique Inn Jawa Tengah. Portofolio Fiktif &amp; Eksplorasi Desain. Seluruh hak cipta dilindungi.
+        </div>
+<div class="flex items-center gap-4">
+<span class="text-tertiary-fixed text-xs tracking-wider uppercase font-medium">Boutique Hospitality Sanctuary</span>
+</div>
+</div>
+</div>
+</footer>
+<!-- Lightbox Interaction Script (Toggle Open/Close) -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const modal = document.getElementById('lightbox-modal');
+      const closeBtn = modal.querySelector('button[title*="Tutup"]');
+
+      // Dismiss lightbox on click or Escape key
+      const closeModal = () => {
+        modal.classList.add('hidden');
+      };
+
+      closeBtn.addEventListener('click', closeModal);
+
+      // Close on Backdrop click outside of inner box
+      modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+          closeModal();
+        }
+      });
+
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+          closeModal();
+        }
+      });
+
+      // Allow clicking any zoom button in the gallery to reopen or switch view
+      const zoomButtons = document.querySelectorAll('button[title*="Perbesar"], button[title*="Buka di Lightbox"]');
+      zoomButtons.forEach((btn) => {
+        btn.addEventListener('click', (e) => {
+          e.preventDefault();
+          modal.classList.remove('hidden');
+        });
+      });
+    });
+  </script>
+</body></html>

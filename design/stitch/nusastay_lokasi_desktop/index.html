@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Lokasi &amp; Panduan Kedatangan — NusaStay Boutique Inn Jawa Tengah</title>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Google Fonts: Playfair Display & Inter -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS v3 -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "terracotta-alert": "#B5472F",
+            "on-surface-variant": "#414847",
+            "surface-container-lowest": "#ffffff",
+            "secondary-fixed": "#eae1d3",
+            "inverse-on-surface": "#f3f0eb",
+            "tertiary": "#2f1d00",
+            "primary-fixed-dim": "#a5cecb",
+            "charcoal-text": "#1F2523",
+            "secondary-container": "#eae1d3",
+            "error-container": "#ffdad6",
+            "teal-dark": "#0C2B29",
+            "tertiary-container": "#4b3000",
+            "on-secondary-fixed-variant": "#4b463c",
+            "surface": "#fcf9f4",
+            "on-primary-container": "#7ea6a3",
+            "on-error": "#ffffff",
+            "error": "#ba1a1a",
+            "on-error-container": "#93000a",
+            "background": "#fcf9f4",
+            "secondary-fixed-dim": "#cec5b8",
+            "surface-white": "#FFFFFF",
+            "on-secondary-fixed": "#1f1b13",
+            "mist-border": "#E2DCD0",
+            "on-background": "#1c1c19",
+            "primary-container": "#123c3a",
+            "amber-demo": "#FFF4DC",
+            "on-tertiary-fixed-variant": "#624000",
+            "on-surface": "#1c1c19",
+            "outline": "#717978",
+            "on-secondary": "#ffffff",
+            "primary-fixed": "#c0ebe7",
+            "tertiary-fixed": "#ffddb1",
+            "surface-container-high": "#ebe8e3",
+            "tertiary-fixed-dim": "#f2be72",
+            "secondary": "#635e53",
+            "on-primary": "#ffffff",
+            "on-tertiary-fixed": "#291800",
+            "stone-muted": "#5E6663",
+            "inverse-primary": "#a5cecb",
+            "inverse-surface": "#31302d",
+            "botanical-green": "#2F7D5B",
+            "on-tertiary": "#ffffff",
+            "surface-container": "#f0ede9",
+            "surface-tint": "#3e6563",
+            "surface-container-highest": "#e5e2dd",
+            "outline-variant": "#c0c8c7",
+            "surface-variant": "#e5e2dd",
+            "on-primary-fixed-variant": "#254d4b",
+            "surface-bright": "#fcf9f4",
+            "on-tertiary-container": "#c6964f",
+            "surface-dim": "#dcdad5",
+            "primary": "#002624",
+            "on-secondary-container": "#6a6459",
+            "on-primary-fixed": "#00201f",
+            "surface-container-low": "#f6f3ee"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-lg": "1.5rem",
+            "gutter-mobile": "1rem",
+            "gutter": "1.5rem",
+            "margin": "2.5rem",
+            "space-xs": "0.25rem",
+            "space-4xl": "7.5rem",
+            "space-xl": "2rem",
+            "space-3xl": "4.5rem",
+            "margin-mobile": "1.25rem",
+            "space-md": "1rem",
+            "space-2xl": "3rem",
+            "space-sm": "0.5rem"
+          },
+          "fontFamily": {
+            "body-md": ["Inter"],
+            "label-eyebrow": ["Inter"],
+            "body-sm": ["Inter"],
+            "title-sm": ["Playfair Display"],
+            "display-hero-mobile": ["Playfair Display"],
+            "button-text": ["Inter"],
+            "headline-md-mobile": ["Playfair Display"],
+            "display-hero": ["Playfair Display"],
+            "headline-lg": ["Playfair Display"],
+            "body-lg": ["Inter"],
+            "headline-lg-mobile": ["Playfair Display"],
+            "headline-md": ["Playfair Display"],
+            "caption": ["Inter"]
+          },
+          "fontSize": {
+            "body-md": ["16px", { "lineHeight": "27px", "fontWeight": "400" }],
+            "label-eyebrow": ["12px", { "lineHeight": "16px", "letterSpacing": "0.12em", "fontWeight": "600" }],
+            "body-sm": ["14px", { "lineHeight": "22px", "fontWeight": "400" }],
+            "title-sm": ["20px", { "lineHeight": "26px", "fontWeight": "600" }],
+            "display-hero-mobile": ["36px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "button-text": ["15px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "500" }],
+            "headline-md-mobile": ["22px", { "lineHeight": "30px", "fontWeight": "500" }],
+            "display-hero": ["64px", { "lineHeight": "70px", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+            "headline-lg": ["44px", { "lineHeight": "52px", "letterSpacing": "-0.015em", "fontWeight": "500" }],
+            "body-lg": ["18px", { "lineHeight": "30px", "fontWeight": "400" }],
+            "headline-lg-mobile": ["28px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "500" }],
+            "headline-md": ["28px", { "lineHeight": "36px", "fontWeight": "500" }],
+            "caption": ["13px", { "lineHeight": "20px", "fontWeight": "400" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .batik-filigree-subtle {
+      background-image: radial-gradient(#123C3A 0.75px, transparent 0.75px), radial-gradient(#123C3A 0.75px, #fcf9f4 0.75px);
+      background-size: 30px 30px;
+      background-position: 0 0, 15px 15px;
+      opacity: 0.05;
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface antialiased font-body-md text-body-md selection:bg-secondary-container selection:text-primary-container relative">
+<!-- ================= 1. TOP APP BAR (MANDATORY SHARED COMPONENT) ================= -->
+<header class="docked full-width top-0 sticky z-40 bg-surface dark:bg-surface border-b border-mist-border dark:border-outline-variant shadow-sm backdrop-blur-md bg-opacity-95">
+<div class="w-full max-w-[1200px] mx-auto px-margin-mobile md:px-margin h-20 flex items-center justify-between">
+<!-- Brand Logo Anchor -->
+<a class="font-headline-md text-headline-md text-primary dark:text-primary-fixed tracking-tight font-semibold flex items-center gap-2 group" href="#">
+<span class="w-3 h-3 rounded-full bg-on-tertiary-container inline-block transition-transform duration-300 group-hover:scale-125"></span>
+<span>NusaStay</span>
+</a>
+<!-- Desktop Navigation Links (Intent Active: 'Lokasi') -->
+<nav class="hidden md:flex items-center space-x-8">
+<a class="text-stone-muted dark:text-outline-variant font-button-text text-button-text transition-colors duration-200 hover:text-primary dark:hover:text-primary-fixed" href="#kamar">Kamar &amp; Suite</a>
+<a class="text-stone-muted dark:text-outline-variant font-button-text text-button-text transition-colors duration-200 hover:text-primary dark:hover:text-primary-fixed" href="#pengalaman">Pengalaman</a>
+<a class="text-stone-muted dark:text-outline-variant font-button-text text-button-text transition-colors duration-200 hover:text-primary dark:hover:text-primary-fixed" href="#fasilitas">Fasilitas</a>
+<!-- Active Nav: Lokasi -->
+<a class="text-primary dark:text-primary-fixed font-button-text text-button-text border-b-2 border-primary dark:border-primary-fixed pb-1" href="#lokasi">Lokasi</a>
+</nav>
+<!-- Trailing Actions Cluster -->
+<div class="flex items-center space-x-4">
+<!-- Call Icon Action -->
+<a aria-label="Telepon Resepsionis" class="w-10 h-10 rounded-full flex items-center justify-center text-primary-container hover:bg-secondary-container transition-colors duration-200" href="tel:+622725598812" title="Hubungi Kami">
+<span class="material-symbols-outlined text-primary" data-icon="call">call</span>
+</a>
+<!-- Trailing Primary Action -->
+<a class="hidden sm:inline-flex items-center justify-center bg-primary-container text-surface-white px-7 py-3 rounded-full font-button-text text-button-text hover:-translate-y-0.5 hover:shadow-lg transition-all duration-200 active:scale-95" href="#reservasi">
+          Reservasi Sekarang
+        </a>
+</div>
+</div>
+</header>
+<!-- ================= 2. HEADER HALAMAN & BREADCRUMB ================= -->
+<section class="relative pt-12 pb-8 md:pt-16 md:pb-12 overflow-hidden border-b border-mist-border/60">
+<div class="absolute inset-0 batik-filigree-subtle pointer-events-none"></div>
+<div class="w-full max-w-[1200px] mx-auto px-margin-mobile md:px-margin relative z-10">
+<!-- Breadcrumb -->
+<nav aria-label="Breadcrumb" class="flex items-center space-x-2 font-caption text-caption text-stone-muted mb-4">
+<a class="hover:text-primary transition-colors" href="#">Beranda</a>
+<span class="text-mist-border">/</span>
+<span class="text-primary font-medium">Lokasi</span>
+</nav>
+<!-- Mikro Eyebrow Label -->
+<div class="inline-flex items-center gap-2 mb-3">
+<span class="w-6 h-px bg-on-tertiary-container"></span>
+<span class="font-label-eyebrow text-label-eyebrow text-on-tertiary-container uppercase tracking-[0.12em]">PANDUAN KEDATANGAN &amp; AKSES</span>
+</div>
+<!-- Judul H1 & Narasi -->
+<div class="max-w-3xl">
+<h1 class="font-headline-lg text-headline-lg text-charcoal-text font-serif tracking-tight mb-4">
+          Lokasi &amp; Panduan Kedatangan
+        </h1>
+<p class="font-body-lg text-body-lg text-stone-muted leading-relaxed">
+          Ketenangan suaka peristirahatan yang tersembunyi di perbukitan asri lereng Menoreh, Klaten. Dirancang menyatu dengan desau pepohonan jati dan hembusan angin lembah, mudah dijangkau dengan jalan beraspal mulus namun berjarak teduh dari bising deru perkotaan.
+        </p>
+</div>
+</div>
+</section>
+<!-- ================= 3. PETA INTERAKTIF & KARTU KONTAK UTAMA ================= -->
+<section class="py-space-2xl md:py-space-3xl relative" id="lokasi">
+<div class="w-full max-w-[1200px] mx-auto px-margin-mobile md:px-margin">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- KOLOM PETA VISUAL (7 Kolom) -->
+<div class="lg:col-span-7 space-y-4">
+<div class="bg-surface-white border border-mist-border rounded-2xl overflow-hidden shadow-[0px_12px_32px_rgba(18,60,58,0.06)] relative group">
+<!-- Map Preview Container / Visual Map Frame -->
+<div class="relative w-full h-[420px] md:h-[480px] bg-secondary-fixed/30 overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" data-alt="A minimalist architectural topographic map illustration of Central Java highlands featuring lush Menoreh hills near Klaten. Warm sand contours, subtle ivory roads, and soft deep teal forest zones bathed in gentle warm morning light with an elegant brass pin." data-location="Klaten, Central Java" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrfvSIxbINx1gxhjXABBM2owqnWiZdvIEbmNQ8xVSCUCKyt3CA_O7KVsx5VADKtxMdu6B8rzw7on5CCyjljmWAlyVHuoQtM3TMP_1bLOk2w1vKggA2DSvx3pQRdULCRHkk_3ASsd6RaFmRw_9b9ieE9CkH7vgM6TDilyPR7XRck4KPqPM4bVmZjxFnXM3TtPT5A-oIsva8T2GqaYnpIzInfJk7oqcNPTTSZM77iOs6-Dt_bR_G7nS1x3mMoX4J5phGMOgMor3OGtI"/>
+<!-- Gradient Vignette Overlay -->
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container/40 via-transparent to-transparent pointer-events-none"></div>
+<!-- Custom Golden Pin Marker -->
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center pointer-events-none drop-shadow-xl animate-bounce" style="animation-duration: 3s;">
+<div class="bg-primary-container text-surface-white px-4 py-2 rounded-full border border-on-tertiary-container flex items-center gap-2 shadow-2xl">
+<span class="w-2.5 h-2.5 rounded-full bg-on-tertiary-container"></span>
+<span class="font-button-text text-button-text text-xs tracking-wider uppercase font-semibold">NusaStay Inn</span>
+</div>
+<div class="w-4 h-4 bg-primary-container rotate-45 -mt-2 border-r border-b border-on-tertiary-container"></div>
+</div>
+<!-- Elevation & Coordinates Floating Chip -->
+<div class="absolute top-4 left-4 bg-surface-white/90 backdrop-blur-md border border-mist-border px-3.5 py-2 rounded-xl flex items-center gap-3 shadow-sm">
+<div class="flex items-center gap-1.5 text-stone-muted font-caption text-caption">
+<span class="material-symbols-outlined text-sm text-on-tertiary-container" data-icon="explore">explore</span>
+<span>7°43'12.4"S 110°35'40.8"E</span>
+</div>
+<span class="text-mist-border">|</span>
+<div class="flex items-center gap-1.5 text-botanical-green font-caption text-caption font-medium">
+<span class="material-symbols-outlined text-sm" data-icon="landscape">landscape</span>
+<span>420 mdpl (Sejuk 23°C)</span>
+</div>
+</div>
+<!-- Bottom Map Actions Bar -->
+<div class="absolute bottom-4 inset-x-4 flex flex-wrap gap-2.5 justify-between items-center bg-surface-white/95 backdrop-blur-md p-3 rounded-xl border border-mist-border">
+<div class="text-charcoal-text font-caption text-caption flex items-center gap-2 font-medium">
+<span class="w-2 h-2 rounded-full bg-botanical-green"></span>
+<span>Akses Jalan Beraspal Mulus &amp; Parkir Mobil Luas</span>
+</div>
+<div class="flex items-center gap-2">
+<button class="px-3 py-1.5 rounded-full border border-mist-border text-stone-muted hover:text-primary hover:border-primary-container font-caption text-caption transition-colors flex items-center gap-1" id="copyBtn" onclick="copyCoords()" title="Salin Koordinat GPS">
+<span class="material-symbols-outlined text-sm" data-icon="content_copy">content_copy</span>
+<span id="copyText">Salin GPS</span>
+</button>
+<a class="px-3.5 py-1.5 rounded-full bg-primary-container text-surface-white hover:bg-teal-dark font-caption text-caption font-medium transition-colors flex items-center gap-1.5 shadow-sm" href="https://maps.google.com/?q=-7.7201,110.5946" rel="noopener noreferrer" target="_blank">
+<span>Buka Google Maps</span>
+<span class="material-symbols-outlined text-xs" data-icon="open_in_new">open_in_new</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Kartu Info Jalur Lingkungan Singkat -->
+<div class="p-5 bg-surface-container-low border-t border-mist-border flex items-center justify-between text-stone-muted font-body-sm text-body-sm">
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined text-base text-on-tertiary-container" data-icon="nature_people">nature_people</span>
+                Kawasan pedesaan tenang berhawa segar, bebas hambatan kontur curam.
+              </span>
+<span class="text-caption font-caption text-stone-muted">Zona Klaten Selatan</span>
+</div>
+</div>
+</div>
+<!-- KOLOM KARTU KONTAK & ALAMAT (5 Kolom) -->
+<div class="lg:col-span-5">
+<div class="bg-surface-white border border-mist-border rounded-2xl p-6 md:p-8 shadow-[0px_12px_32px_rgba(18,60,58,0.06)] space-y-6">
+<!-- Header Kartu -->
+<div class="border-b border-mist-border pb-5">
+<span class="font-label-eyebrow text-label-eyebrow text-on-tertiary-container uppercase tracking-[0.12em] block mb-1">ALAMAT RESMI</span>
+<h2 class="font-title-sm text-title-sm text-charcoal-text font-serif mb-2">Suaka NusaStay Boutique Inn</h2>
+<p class="font-body-md text-body-md text-stone-muted">
+                Jl. Menoreh Asri No. 18, Perbukitan Menoreh, Prambanan Area, Delanggu, Klaten, Jawa Tengah 57471, Indonesia
+              </p>
+</div>
+<!-- Jam Operasional & Layanan Concierge -->
+<div class="grid grid-cols-2 gap-4 bg-surface-container-low p-4 rounded-xl border border-mist-border/80">
+<div>
+<span class="font-caption text-caption text-stone-muted block mb-0.5">Waktu Check-in</span>
+<span class="font-button-text text-button-text text-charcoal-text font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-botanical-green" data-icon="login">login</span>
+                  14.00 WIB
+                </span>
+</div>
+<div>
+<span class="font-caption text-caption text-stone-muted block mb-0.5">Waktu Check-out</span>
+<span class="font-button-text text-button-text text-charcoal-text font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-on-tertiary-container" data-icon="logout">logout</span>
+                  12.00 WIB
+                </span>
+</div>
+<div class="col-span-2 pt-2 border-t border-mist-border/60 flex items-center justify-between text-xs text-stone-muted">
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm text-botanical-green" data-icon="check_circle">check_circle</span>
+                  Resepsionis Siaga 24 Jam Penuh
+                </span>
+<span class="text-charcoal-text font-medium">Bantuan Cepat</span>
+</div>
+</div>
+<!-- Jalur Komunikasi & Telepon -->
+<div class="space-y-3">
+<span class="font-label-eyebrow text-label-eyebrow text-stone-muted uppercase tracking-[0.12em] block">HUBUNGI RESEPSIONIS &amp; CONCIERGE</span>
+<!-- Nomor Telepon -->
+<div class="flex items-center justify-between py-2 border-b border-mist-border/60">
+<span class="font-body-sm text-body-sm text-stone-muted flex items-center gap-2">
+<span class="material-symbols-outlined text-base" data-icon="call">call</span>
+                  Telepon Meja
+                </span>
+<a class="font-button-text text-button-text text-charcoal-text font-medium hover:text-primary transition-colors" href="tel:+622725598812">
+                  +62 272 559 8812
+                </a>
+</div>
+<!-- Surel Resmi -->
+<div class="flex items-center justify-between py-2 border-b border-mist-border/60">
+<span class="font-body-sm text-body-sm text-stone-muted flex items-center gap-2">
+<span class="material-symbols-outlined text-base" data-icon="mail">mail</span>
+                  Surel Reservasi
+                </span>
+<a class="font-body-sm text-body-sm text-charcoal-text hover:text-primary transition-colors" href="mailto:salam@nusastay-inn.id">
+                  salam@nusastay-inn.id
+                </a>
+</div>
+<!-- Layanan Penjemputan -->
+<div class="py-2 flex items-start gap-3 bg-secondary-container/40 p-3 rounded-xl border border-secondary-fixed">
+<span class="material-symbols-outlined text-on-tertiary-container mt-0.5 text-lg" data-icon="directions_car">directions_car</span>
+<div>
+<h3 class="font-button-text text-button-text text-charcoal-text font-semibold">Layanan Penjemputan Privat</h3>
+<p class="font-caption text-caption text-stone-muted">Armada khusus NusaStay tersedia untuk stasiun &amp; bandara dengan konfirmasi H-1 sebelum kedatangan.</p>
+</div>
+</div>
+</div>
+<!-- Primary WhatsApp Pill Action -->
+<div class="pt-2">
+<a class="w-full flex items-center justify-center gap-3 bg-primary-container text-surface-white py-3.5 px-6 rounded-full font-button-text text-button-text hover:bg-teal-dark hover:shadow-lg transition-all duration-200 active:scale-95 text-center" href="https://wa.me/6281288992100?text=Halo%20NusaStay%20Boutique%20Inn,%20saya%20memerlukan%20panduan%20arah%20dan%20informasi%20kedatangan." rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-lg" data-icon="chat">chat</span>
+<span>Hubungi Resepsionis via WhatsApp</span>
+</a>
+<p class="font-caption text-caption text-stone-muted text-center mt-2.5">
+                Panduan suara langsung via telepon tersedia bagi tamu yang sedang berkendara.
+              </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= 4. PANDUAN RUTE KEDATANGAN ================= -->
+<section class="py-space-2xl md:py-space-3xl bg-secondary-fixed/30 border-y border-mist-border relative">
+<div class="w-full max-w-[1200px] mx-auto px-margin-mobile md:px-margin">
+<!-- Section Header -->
+<div class="max-w-2xl mb-12">
+<span class="font-label-eyebrow text-label-eyebrow text-on-tertiary-container uppercase tracking-[0.12em] block mb-2">AKSES TRANSPORTASI</span>
+<h2 class="font-headline-md text-headline-md text-charcoal-text font-serif">Panduan Akses Menuju Suaka</h2>
+<p class="font-body-md text-body-md text-stone-muted mt-2">
+          Perjalanan Anda menuju ketenangan dirancang agar tetap menyenangkan dan bebas kendala dengan dua rute utama yang nyaman.
+        </p>
+</div>
+<!-- Route Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Rute 1: Dari Stasiun Klaten -->
+<div class="bg-surface-white border border-mist-border rounded-2xl p-7 md:p-8 shadow-[0px_12px_32px_rgba(18,60,58,0.06)] hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="px-3 py-1 bg-amber-demo text-charcoal-text border border-mist-border rounded-full font-caption text-caption font-medium flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm text-on-tertiary-container" data-icon="train">train</span>
+                KRL / Kereta Api
+              </span>
+<span class="font-title-sm text-title-sm text-primary-container font-serif">30–40 Menit</span>
+</div>
+<h3 class="font-title-sm text-title-sm text-charcoal-text font-serif mb-2">Dari Stasiun Klaten (KT)</h3>
+<p class="font-body-md text-body-md text-stone-muted mb-6">
+              Akses paling praktis bagi tamu yang datang via KRL Commuter Line Jogja-Solo maupun kereta jarak jauh dari Jakarta atau Surabaya.
+            </p>
+<!-- Detail Langkah Rute -->
+<div class="space-y-3.5 border-t border-mist-border/80 pt-5">
+<div class="flex gap-3 items-start">
+<span class="w-6 h-6 rounded-full bg-secondary-container text-charcoal-text flex items-center justify-center font-caption text-caption font-semibold shrink-0">1</span>
+<p class="font-body-sm text-body-sm text-stone-muted">
+                  Dari pintu keluar stasiun, arahkan kendaraan ke arah barat daya menyusuri koridor jalan kabupaten beraspal mulus ke arah perbukitan Menoreh.
+                </p>
+</div>
+<div class="flex gap-3 items-start">
+<span class="w-6 h-6 rounded-full bg-secondary-container text-charcoal-text flex items-center justify-center font-caption text-caption font-semibold shrink-0">2</span>
+<p class="font-body-sm text-body-sm text-stone-muted">
+                  Taksi daring (Grab/Gojek) maupun armada jemputan NusaStay dapat langsung merapat di area penjemputan resmi Stasiun Klaten.
+                </p>
+</div>
+<div class="flex gap-3 items-start">
+<span class="w-6 h-6 rounded-full bg-secondary-container text-charcoal-text flex items-center justify-center font-caption text-caption font-semibold shrink-0">3</span>
+<p class="font-body-sm text-body-sm text-stone-muted">
+                  Memasuki gerbang kawasan Menoreh Asri, gapura kayu jati NusaStay berada di sisi kanan jalan dengan penerangan hangat lentera tembaga.
+                </p>
+</div>
+</div>
+</div>
+<div class="mt-8 pt-4 border-t border-mist-border flex items-center justify-between text-caption font-caption text-stone-muted">
+<span>Jarak Tempuh: ±16 km</span>
+<span class="text-botanical-green font-medium">Bebas Tanjakan Curam</span>
+</div>
+</div>
+<!-- Rute 2: Dari Bandara Adi Soemarmo -->
+<div class="bg-surface-white border border-mist-border rounded-2xl p-7 md:p-8 shadow-[0px_12px_32px_rgba(18,60,58,0.06)] hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="px-3 py-1 bg-secondary-container text-charcoal-text border border-mist-border rounded-full font-caption text-caption font-medium flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm text-on-tertiary-container" data-icon="flight">flight</span>
+                Bandara Udara
+              </span>
+<span class="font-title-sm text-title-sm text-primary-container font-serif">60–75 Menit</span>
+</div>
+<h3 class="font-title-sm text-title-sm text-charcoal-text font-serif mb-2">Dari Bandara Adi Soemarmo Solo (SOC)</h3>
+<p class="font-body-md text-body-md text-stone-muted mb-6">
+              Rute efisien melalui jaringan tol bebas hambatan fungsional Solo–Yogyakarta dengan panorama perbukitan di paruh akhir perjalanan.
+            </p>
+<!-- Detail Langkah Rute -->
+<div class="space-y-3.5 border-t border-mist-border/80 pt-5">
+<div class="flex gap-3 items-start">
+<span class="w-6 h-6 rounded-full bg-secondary-container text-charcoal-text flex items-center justify-center font-caption text-caption font-semibold shrink-0">1</span>
+<p class="font-body-sm text-body-sm text-stone-muted">
+                  Masuk melalui Gerbang Tol Bandara Adi Soemarmo menuju ruas Tol Trans Jawa arah Solo–Jogja.
+                </p>
+</div>
+<div class="flex gap-3 items-start">
+<span class="w-6 h-6 rounded-full bg-secondary-container text-charcoal-text flex items-center justify-center font-caption text-caption font-semibold shrink-0">2</span>
+<p class="font-body-sm text-body-sm text-stone-muted">
+                  Ambil lajur keluar pada Gerbang Tol Delanggu / Klaten Barat, lalu belok kiri menuju jalur lingkar selatan berhawa sejuk.
+                </p>
+</div>
+<div class="flex gap-3 items-start">
+<span class="w-6 h-6 rounded-full bg-secondary-container text-charcoal-text flex items-center justify-center font-caption text-caption font-semibold shrink-0">3</span>
+<p class="font-body-sm text-body-sm text-stone-muted">
+                  Lanjutkan berkendara santai selama 20 menit menyusuri pedesaan asri hingga menjumpai plang arah NusaStay Boutique Inn.
+                </p>
+</div>
+</div>
+</div>
+<div class="mt-8 pt-4 border-t border-mist-border flex items-center justify-between text-caption font-caption text-stone-muted">
+<span>Jarak Tempuh: ±38 km</span>
+<span class="text-botanical-green font-medium">Jalur Tol Bebas Macet</span>
+</div>
+</div>
+</div>
+<!-- Traffic Disclaimer -->
+<div class="mt-8 bg-surface-white/60 border border-mist-border rounded-xl p-4 flex items-center gap-3 text-stone-muted font-caption text-caption">
+<span class="material-symbols-outlined text-base text-on-tertiary-container" data-icon="info">info</span>
+<span>
+          * Estimasi waktu perjalanan dapat sedikit bervariasi bergantung pada intensitas lalu lintas lokal di akhir pekan atau hari libur nasional. Tim concierge kami siap memandu arah terkini melalui telepon langsung.
+        </span>
+</div>
+</div>
+</section>
+<!-- ================= 5. REKOMENDASI DESTINASI & TEMPAT MENARIK SEKITAR ================= -->
+<section class="py-space-2xl md:py-space-3xl relative">
+<div class="w-full max-w-[1200px] mx-auto px-margin-mobile md:px-margin">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+<div class="max-w-xl">
+<span class="font-label-eyebrow text-label-eyebrow text-on-tertiary-container uppercase tracking-[0.12em] block mb-2">EKSPLORASI LOKAL</span>
+<h2 class="font-headline-md text-headline-md text-charcoal-text font-serif">Menjelajahi Pesona Tanah Mataram</h2>
+<p class="font-body-md text-body-md text-stone-muted mt-2">
+            Dari candi megah warisan dunia hingga kesegaran mata air alami, suaka kami berada dalam radius jangkauan yang teduh dan memikat.
+          </p>
+</div>
+<div class="mt-4 md:mt-0">
+<span class="font-caption text-caption text-stone-muted border border-mist-border px-4 py-2 rounded-full inline-block bg-surface-white">
+            Radius Wisata: 15–25 Menit
+          </span>
+</div>
+</div>
+<!-- Destinations Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Card 1: Candi Prambanan -->
+<div class="bg-surface-white border border-mist-border rounded-2xl overflow-hidden shadow-[0px_12px_32px_rgba(18,60,58,0.06)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col group">
+<div class="relative h-48 overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="The towering stone spires of the Prambanan temple complex in Central Java captured during a golden late afternoon. Warm sunlight illuminates intricate Hindu reliefs against a clear soft sky with peaceful landscaped grass in a boutique heritage aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyEUFayLcrWIyxcYzk7xHp0MH3KU1gBMPNxMe9l3UvjFzntaRhtYOJC7fv9j1b5_1F3MBu4XvFj_C-D8v-GqRKXrPEeGBXuWj2aJ1vgLN0tg4dTGicBhAkonGS5nI34BDGNs9ccAdxgXry9b5BmFlIpEaNpN-6xqks882cDKIdijuDUvrjdCjFww3At0fvRj2q9MK_66PwsKWpjFw-wn5H9e5dv-S5xpw58KVCbmNpCEA-vZMsEjyWJ-KSneQ0inwhs5WEL-oleX8"/>
+<span class="absolute top-3 left-3 bg-primary-container/90 backdrop-blur-sm text-surface-white font-caption text-caption px-2.5 py-1 rounded-full text-xs">
+              Situs UNESCO
+            </span>
+</div>
+<div class="p-5 flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-1.5 text-on-tertiary-container font-caption text-caption mb-1.5 font-medium">
+<span class="material-symbols-outlined text-sm" data-icon="schedule">schedule</span>
+<span>25 Menit Berkendara</span>
+</div>
+<h3 class="font-title-sm text-title-sm text-charcoal-text font-serif mb-2">Candi Prambanan</h3>
+<p class="font-body-sm text-body-sm text-stone-muted">
+                Kompleks candi Hindu termegah di Indonesia dengan relief epik Ramayana dan keanggunan siluet kala senja meredup.
+              </p>
+</div>
+<div class="mt-4 pt-3 border-t border-mist-border/60 text-caption font-caption text-stone-muted">
+              Prambanan, Perbatasan Sleman-Klaten
+            </div>
+</div>
+</div>
+<!-- Card 2: Umbul Sigedang & Ponggok -->
+<div class="bg-surface-white border border-mist-border rounded-2xl overflow-hidden shadow-[0px_12px_32px_rgba(18,60,58,0.06)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col group">
+<div class="relative h-48 overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Crystal clear natural freshwater spring in Klaten Java shaded by lush ancient banyan and teak trees. Sunlight filters through water creating tranquil caustic patterns on the pebble bottom with gentle botanical ripples in an editorial travel style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpNet35oPvM1vxwqkUByPWUjDq3Jsx5bJ8HiLtkd412pXsP636b5bqATm2dh2tyAsHOYSYhIwVGJsoz_h8vNEO2NqU4MVZN3Fm18NiUvZtN9vNZfO_AFFd55MaO1ODPFTbbyzf6TH420Z4K7Mn0JMwuR74kDOPmtj8p8Y4GTYDhCO0KCGbIqpnkF2iwL-MbvEcHgi5qIxg6zHSX61YmL7D-JKCad0m0h_RwtHeFabRs8pHawXWk9XYMDbaMTwSQWCNVu0QFjnqUd4"/>
+<span class="absolute top-3 left-3 bg-botanical-green/90 backdrop-blur-sm text-surface-white font-caption text-caption px-2.5 py-1 rounded-full text-xs">
+              Mata Air Alami
+            </span>
+</div>
+<div class="p-5 flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-1.5 text-on-tertiary-container font-caption text-caption mb-1.5 font-medium">
+<span class="material-symbols-outlined text-sm" data-icon="schedule">schedule</span>
+<span>20 Menit Berkendara</span>
+</div>
+<h3 class="font-title-sm text-title-sm text-charcoal-text font-serif mb-2">Umbul Sigedang &amp; Ponggok</h3>
+<p class="font-body-sm text-body-sm text-stone-muted">
+                Sumber mata air vulkanik sebening kaca yang dinaungi pohon beringin purba, menyegarkan tubuh dan menyejukkan batin.
+              </p>
+</div>
+<div class="mt-4 pt-3 border-t border-mist-border/60 text-caption font-caption text-stone-muted">
+              Polanharjo, Klaten
+            </div>
+</div>
+</div>
+<!-- Card 3: Perkebunan Teh & Bukit Menoreh -->
+<div class="bg-surface-white border border-mist-border rounded-2xl overflow-hidden shadow-[0px_12px_32px_rgba(18,60,58,0.06)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col group">
+<div class="relative h-48 overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Misty morning rolling hills covered in emerald green tea plantation in Central Java. Soft dawn mist gently hugs the contours of the hilltops under warm diffused sunrise rays with deep teal forest silhouettes in tactile minimalism." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAEWBDKqWtO1c2rxaI_GnZFl4Dc0NRclH3vzTZQQH0m2E6drT8kUkjxWQ6R23NHlzyyJetTKPokt-Z8vLbvc9hFoWdPMBGXVuQprfkzuxkhv_GsAv-jbCjNm2cs63B8J9SpF3jPHLnLUoEZDi9mlwmVp2HJENgOYBTMOQ6WhkrD73O3vDT1dIAxkK_MpScDlmSScTm_uRnPeMs4VAXvlL79auhBiiRIO73ZimlEPIusvNFefwCHGS8wv7YlxHMT4MNIAfnuJLQF_6Y"/>
+<span class="absolute top-3 left-3 bg-secondary-container/90 backdrop-blur-sm text-charcoal-text font-caption text-caption px-2.5 py-1 rounded-full text-xs border border-mist-border">
+              Panorama Alam
+            </span>
+</div>
+<div class="p-5 flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-1.5 text-on-tertiary-container font-caption text-caption mb-1.5 font-medium">
+<span class="material-symbols-outlined text-sm" data-icon="schedule">schedule</span>
+<span>15 Menit Berkendara</span>
+</div>
+<h3 class="font-title-sm text-title-sm text-charcoal-text font-serif mb-2">Bukit &amp; Lereng Menoreh</h3>
+<p class="font-body-sm text-body-sm text-stone-muted">
+                Hamparan kabut fajar menenangkan dan udara pegunungan segar, sangat ideal untuk ritual jalan pagi santai dan meditasi.
+              </p>
+</div>
+<div class="mt-4 pt-3 border-t border-mist-border/60 text-caption font-caption text-stone-muted">
+              Pegunungan Menoreh Selatan
+            </div>
+</div>
+</div>
+<!-- Card 4: Desa Wisata Batik Tradisional -->
+<div class="bg-surface-white border border-mist-border rounded-2xl overflow-hidden shadow-[0px_12px_32px_rgba(18,60,58,0.06)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col group">
+<div class="relative h-48 overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="An artisanal Javanese batik workshop with natural indigo and soga dyes on handwoven cotton fabric. An artisan delicately draws molten wax with a canting pen under soft window daylight reflecting quiet heritage craftsmanship." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkGZtWha9bB6AGBuASsuzX1XfYge_amq8j2rzlzJjh5ds6b2Fqwxqef-HTpc-bjDmKdsR0UaNoQCls3J8FTK9tDvTveNV3kkoNQ9fT9Iuea2NashTKfu7Cwa3E8OZBHqJ-QMQYhPnPvZq-dB7HquV53I9EtDqGkshkfyEzLTp3OkxhzyOFAXcMvnqGHSNBuYQ1XfaG27217_v7ZlaMLqfWE9znaaQfO6liei6iZEwBXPSAbOp4EShJYYVsumbdEFibXgidNkgMbzg"/>
+<span class="absolute top-3 left-3 bg-amber-demo/90 backdrop-blur-sm text-charcoal-text font-caption text-caption px-2.5 py-1 rounded-full text-xs border border-mist-border">
+              Warisan Budaya
+            </span>
+</div>
+<div class="p-5 flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-1.5 text-on-tertiary-container font-caption text-caption mb-1.5 font-medium">
+<span class="material-symbols-outlined text-sm" data-icon="schedule">schedule</span>
+<span>15 Menit Berkendara</span>
+</div>
+<h3 class="font-title-sm text-title-sm text-charcoal-text font-serif mb-2">Desa Kerajinan Batik Tulis</h3>
+<p class="font-body-sm text-body-sm text-stone-muted">
+                Interaksi hangat bersama para maestro canting batik pewarna alami ramah lingkungan khas tradisi keraton Mataram.
+              </p>
+</div>
+<div class="mt-4 pt-3 border-t border-mist-border/60 text-caption font-caption text-stone-muted">
+              Sentra Batik Bayat, Klaten
+            </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= 6. BANNER CTA AKHIR ================= -->
+<section class="py-space-2xl md:py-space-3xl bg-primary-container text-surface-white relative overflow-hidden">
+<div class="absolute inset-0 opacity-10 bg-[radial-gradient(#FAF7F2_1px,transparent_1px)] [background-size:24px_24px] pointer-events-none"></div>
+<div class="w-full max-w-[1200px] mx-auto px-margin-mobile md:px-margin relative z-10 text-center">
+<span class="font-label-eyebrow text-label-eyebrow text-on-tertiary-container uppercase tracking-[0.12em] block mb-3">
+        SUAKA MENANTI KEDATANGAN ANDA
+      </span>
+<h2 class="font-headline-lg text-headline-lg font-serif mb-4 text-surface-bright max-w-2xl mx-auto">
+        Rencanakan Pelarian Tenang Anda di Klaten
+      </h2>
+<p class="font-body-lg text-body-lg text-primary-fixed max-w-xl mx-auto mb-8 font-light">
+        Kamar-kamar terbatas dengan beranda pribadi yang menghadap lereng bukit berkabut menanti untuk memulihkan raga dan jiwa Anda.
+      </p>
+<!-- Button CTA Cluster -->
+<div class="flex flex-wrap items-center justify-center gap-4 mb-8">
+<a class="bg-secondary-fixed text-primary-container px-8 py-3.5 rounded-full font-button-text text-button-text font-semibold hover:bg-surface-white hover:shadow-xl transition-all duration-200 active:scale-95" href="#reservasi">
+          Ajukan Reservasi Bilik
+        </a>
+<a class="inline-flex items-center gap-2 border border-primary-fixed-dim/40 text-surface-bright px-7 py-3.5 rounded-full font-button-text text-button-text hover:bg-primary/40 transition-all duration-200" href="https://wa.me/6281288992100" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-base" data-icon="chat">chat</span>
+<span>Konsultasi Perjalanan</span>
+</a>
+</div>
+<!-- Demo Disclaimer Chip -->
+<div class="inline-block bg-teal-dark/60 border border-primary-container px-4 py-2 rounded-full">
+<span class="font-caption text-caption text-primary-fixed-dim">
+          * Portofolio Fiktif &amp; Eksplorasi Desain UI/UX Arsitektur Nusantara NusaStay.
+        </span>
+</div>
+</div>
+</section>
+<!-- ================= 7. FOOTER RESMI (MANDATORY SHARED COMPONENT) ================= -->
+<footer class="docked full-width bottom bg-teal-dark dark:bg-teal-dark border-t border-primary-container dark:border-primary-container">
+<div class="w-full max-w-[1200px] mx-auto px-margin-mobile md:px-margin py-space-2xl text-surface-bright dark:text-surface-bright">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 pb-10 border-b border-primary-container">
+<!-- Brand & Description (5 Kolom) -->
+<div class="md:col-span-5 space-y-4">
+<a class="font-headline-md text-headline-md text-surface-bright tracking-tight font-semibold flex items-center gap-2" href="#">
+<span class="w-2.5 h-2.5 rounded-full bg-on-tertiary-container inline-block"></span>
+<span>NusaStay</span>
+</a>
+<p class="font-body-sm text-body-sm text-outline-variant max-w-sm leading-relaxed">
+            Suaka peristirahatan butik kontemporer yang berakar pada ketenangan tradisi Jawa Tengah. Menghadirkan jeda hening dan keramahtamahan artisanal yang tulus.
+          </p>
+<div class="font-caption text-caption text-outline-variant">
+            Jl. Menoreh Asri No. 18, Perbukitan Menoreh, Klaten, Jawa Tengah 57471
+          </div>
+</div>
+<!-- Quick Links (3 Kolom) -->
+<div class="md:col-span-3 space-y-3">
+<h4 class="font-title-sm text-title-sm text-surface-bright font-serif mb-2">Tautan Suaka</h4>
+<ul class="space-y-2 font-body-sm text-body-sm">
+<li><a class="text-outline-variant dark:text-outline-variant hover:text-surface-bright transition-colors duration-200" href="#kamar">Kamar &amp; Suite</a></li>
+<li><a class="text-outline-variant dark:text-outline-variant hover:text-surface-bright transition-colors duration-200" href="#pengalaman">Pengalaman Khas</a></li>
+<li><a class="text-outline-variant dark:text-outline-variant hover:text-surface-bright transition-colors duration-200" href="#fasilitas">Fasilitas Relaksasi</a></li>
+<li><a class="text-surface-bright dark:text-surface-bright font-medium underline underline-offset-4" href="#lokasi">Lokasi &amp; Akses</a></li>
+</ul>
+</div>
+<!-- Reservasi & Check-in (4 Kolom) -->
+<div class="md:col-span-4 space-y-3">
+<h4 class="font-title-sm text-title-sm text-surface-bright font-serif mb-2">Layanan Tamu</h4>
+<p class="font-body-sm text-body-sm text-outline-variant">
+            Check-in: 14.00 WIB | Check-out: 12.00 WIB<br/>
+            Resepsionis &amp; Bantuan Concierge 24 Jam Penuh
+          </p>
+<div class="pt-2 font-body-sm text-body-sm">
+<span class="text-outline-variant block">Pertanyaan Reservasi:</span>
+<a class="text-surface-bright hover:text-primary-fixed transition-colors font-medium" href="tel:+622725598812">+62 272 559 8812</a>
+</div>
+</div>
+</div>
+<!-- Footer Bottom Links & Mandatory Copyright -->
+<div class="pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
+<!-- Copyright Text strictly matching JSON -->
+<p class="font-caption text-caption text-outline-variant text-center md:text-left">
+          © 2025 NusaStay Boutique Inn Jawa Tengah. Portofolio Fiktif &amp; Eksplorasi Desain. Seluruh hak cipta dilindungi.
+        </p>
+<!-- Mandatory Links matching JSON -->
+<div class="flex flex-wrap items-center justify-center gap-6 font-caption text-caption">
+<a class="text-outline-variant dark:text-outline-variant hover:text-surface-bright transition-colors duration-200" href="#">Kebijakan Privasi</a>
+<a class="text-outline-variant dark:text-outline-variant hover:text-surface-bright transition-colors duration-200" href="#">Syarat &amp; Ketentuan Reservasi</a>
+<a class="text-outline-variant dark:text-outline-variant hover:text-surface-bright transition-colors duration-200" href="#">Panduan Tamu</a>
+<a class="text-outline-variant dark:text-outline-variant hover:text-surface-bright transition-colors duration-200" href="#">Bantuan &amp; FAQ</a>
+</div>
+</div>
+</div>
+</footer>
+<!-- ================= 8. FLOATING WHATSAPP BUTTON ================= -->
+<aside aria-label="Bantuan Langsung">
+<a aria-label="WhatsApp Resepsionis" class="fixed bottom-6 right-6 w-14 h-14 rounded-full bg-primary-container text-surface-white flex items-center justify-center shadow-[0_12px_28px_rgba(18,60,58,0.25)] hover:scale-105 active:scale-95 transition-all duration-200 z-50 border border-on-tertiary-container group" href="https://wa.me/6281288992100?text=Halo%20NusaStay%20Boutique%20Inn,%20saya%20sedang%20dalam%20perjalanan%20menuju%20lokasi." rel="noopener noreferrer" target="_blank" title="Hubungi Resepsionis Langsung via WhatsApp">
+<span class="material-symbols-outlined text-2xl group-hover:rotate-12 transition-transform" data-icon="chat">chat</span>
+<!-- Micro Tooltip on hover -->
+<span class="absolute right-16 bg-primary-container text-surface-white text-xs px-3 py-1.5 rounded-lg whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none shadow-md border border-mist-border">
+        Hubungi Resepsionis
+      </span>
+</a>
+</aside>
+<!-- Client Interaction Script -->
+<script>
+    function copyCoords() {
+      const coords = "-7.7201, 110.5946";
+      navigator.clipboard.writeText(coords).then(() => {
+        const copyText = document.getElementById('copyText');
+        if (copyText) {
+          copyText.innerText = 'Tersalin!';
+          setTimeout(() => {
+            copyText.innerText = 'Salin GPS';
+          }, 2000);
+        }
+      }).catch(err => {
+        console.error('Gagal menyalin:', err);
+      });
+    }
+  </script>
+</body></html>

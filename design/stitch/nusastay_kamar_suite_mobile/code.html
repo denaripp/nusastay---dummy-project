@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: 'class', theme: { extend: { colors: { 'on-secondary-fixed': '#1f1b13', 'on-surface-variant': '#414847', 'secondary': '#635e53', 'tertiary-fixed-dim': '#f2be72', 'background': '#fcf9f4', 'surface-variant': '#e5e2dd', 'on-error-container': '#93000a', 'on-secondary-fixed-variant': '#4b463c', 'outline-variant': '#c0c8c7', 'inverse-primary': '#a5cecb', 'surface-container-low': '#f6f3ee', 'surface-white': '#FFFFFF', 'tertiary-fixed': '#ffddb1', 'on-tertiary': '#ffffff', 'charcoal-text': '#1F2523', 'stone-muted': '#5E6663', 'inverse-surface': '#31302d', 'primary': '#002624', 'primary-container': '#123c3a', 'tertiary-container': '#4b3000', 'on-tertiary-container': '#c6964f', 'error': '#ba1a1a', 'surface-container-lowest': '#ffffff', 'on-error': '#ffffff', 'terracotta-alert': '#B5472F', 'on-tertiary-fixed-variant': '#624000', 'secondary-fixed-dim': '#cec5b8', 'on-primary-fixed': '#00201f', 'on-background': '#1c1c19', 'on-secondary': '#ffffff', 'on-secondary-container': '#6a6459', 'botanical-green': '#2F7D5B', 'surface-container': '#f0ede9', 'on-surface': '#1c1c19', 'surface-container-high': '#ebe8e3', 'on-primary-fixed-variant': '#254d4b', 'on-primary': '#ffffff', 'secondary-container': '#eae1d3', 'surface': '#fcf9f4', 'teal-dark': '#0C2B29', 'surface-tint': '#3e6563', 'on-primary-container': '#7ea6a3', 'on-tertiary-fixed': '#291800', 'inverse-on-surface': '#f3f0eb', 'secondary-fixed': '#eae1d3', 'mist-border': '#E2DCD0', 'primary-fixed-dim': '#a5cecb', 'amber-demo': '#FFF4DC', 'outline': '#717978', 'tertiary': '#2f1d00', 'surface-dim': '#dcdad5', 'surface-bright': '#fcf9f4', 'error-container': '#ffdad6', 'primary-fixed': '#c0ebe7', 'surface-container-highest': '#e5e2dd' }, borderRadius: { 'DEFAULT': '0.25rem', 'lg': '0.5rem', 'xl': '0.75rem', 'full': '9999px' }, spacing: { 'margin': '2.5rem', 'gutter-mobile': '1rem', 'space-xl': '2rem', 'space-sm': '0.5rem', 'space-xs': '0.25rem', 'margin-mobile': '1.25rem', 'space-3xl': '4.5rem', 'space-lg': '1.5rem', 'gutter': '1.5rem', 'space-md': '1rem', 'space-2xl': '3rem', 'space-4xl': '7.5rem' }, fontFamily: { 'headline-lg-mobile': ['Playfair Display'], 'button-text': ['Inter'], 'body-lg': ['Inter'], 'headline-md-mobile': ['Playfair Display'], 'body-sm': ['Inter'], 'label-eyebrow': ['Inter'], 'title-sm': ['Playfair Display'], 'headline-md': ['Playfair Display'], 'caption': ['Inter'], 'display-hero': ['Playfair Display'], 'display-hero-mobile': ['Playfair Display'], 'body-md': ['Inter'], 'headline-lg': ['Playfair Display'] }, fontSize: { 'headline-lg-mobile': ['28px', { lineHeight: '34px', letterSpacing: '-0.01em', fontWeight: '500' }], 'button-text': ['15px', { lineHeight: '20px', letterSpacing: '0.02em', fontWeight: '500' }], 'body-lg': ['18px', { lineHeight: '30px', fontWeight: '400' }], 'headline-md-mobile': ['22px', { lineHeight: '30px', fontWeight: '500' }], 'body-sm': ['14px', { lineHeight: '22px', fontWeight: '400' }], 'label-eyebrow': ['12px', { lineHeight: '16px', letterSpacing: '0.12em', fontWeight: '600' }], 'title-sm': ['20px', { lineHeight: '26px', fontWeight: '600' }], 'headline-md': ['28px', { lineHeight: '36px', fontWeight: '500' }], 'caption': ['13px', { lineHeight: '20px', fontWeight: '400' }], 'display-hero': ['64px', { lineHeight: '70px', letterSpacing: '-0.02em', fontWeight: '600' }], 'display-hero-mobile': ['36px', { lineHeight: '40px', letterSpacing: '-0.01em', fontWeight: '600' }], 'body-md': ['16px', { lineHeight: '27px', fontWeight: '400' }], 'headline-lg': ['44px', { lineHeight: '52px', letterSpacing: '-0.015em', fontWeight: '500' }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 inset-x-0 z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-16 px-margin-mobile flex items-center justify-between gap-space-xs"><div class="flex items-center gap-space-sm"><button aria-label="Menu" class="w-11 h-11 flex items-center justify-center text-primary active:scale-95 transition-transform"><span class="material-symbols-outlined text-[24px]">menu</span></button><div class="flex items-center gap-space-xs"><img alt="NusaStay Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpCme8Gm7EAgoiQN8kq8s2dzi4bxxUwdvbX1QAGveY0_32tlCIc3Nc5Sru4KoFHHzUXaXkDEC1cpenXssRGalMt1amJ96E4-ZDWOndbXlyi_tvKNFMrnjuP2NV01zH76cDiUrawlvXzZ5v3jBVJzZuQUuC1tG_wJaE8cOxud1J0Dx1uz6NpNyQMEDrtTgw7cJmRaZ4Q1rdzn63ZcOy4nN0c8mvxkAHIoICBAXye3_VMkhu8-8Rnat7"/><span class="font-headline-md-mobile text-headline-md-mobile text-primary font-medium tracking-tight">NusaStay</span></div></div><div class="flex items-center gap-space-sm"><a class="h-11 px-space-md rounded-full bg-primary-container text-on-primary flex items-center justify-center font-button-text text-button-text shadow-[0_4px_14px_rgba(18,60,58,0.18)] active:scale-95 transition-all" data-path="reservasi" href="#">Reservasi</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-16 bg-surface flex-grow"><div class="flex flex-col w-full">
+<!-- Atmospheric Hero Header -->
+<section class="relative w-full overflow-hidden">
+<div class="w-full bg-cover bg-center pt-8 pb-10 px-margin-mobile relative" data-alt="Quiet interior of an authentic Javanese joglo wooden sanctuary with warm sunlight piercing through reclaimed teak louvered blinds, soft ivory linen daybed, subtle brass accents, tropical greenery outside, serene and meditative atmosphere, editorial architectural photography in earthy warm tones." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC0rgT2NS62lyEIa0F4Ant2jDGjK5IhGnvhOaEkYOvFx2dUKVErCPu7RCRzOS2HTPZNBO9EGBKq9mQPR4kZ7UG1-wM41VGIOHz1eickqTVmayvIRx6ng7hBrLX9TKV5FKaVojEHkUIcVZVkYZtDnniDIh-gRRaV4myIuFeRBX0EuxwLqnxhSNJNUhc-yen_BDvfpgUIaRoQAERsim9PXAa1sQPUN0sZg0bUNDRJdXTiowgnak8N4Dko')">
+<!-- Gradient Scrim for contrast & brand warmth -->
+<div class="absolute inset-0 bg-gradient-to-b from-primary/80 via-primary/70 to-surface"></div>
+<!-- Watermark Batik Motif (Ultra subtle) -->
+<div class="absolute inset-0 opacity-[0.06] pointer-events-none flex items-center justify-center">
+<svg class="w-full h-full" fill="none" viewbox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+<circle cx="200" cy="200" r="140" stroke="#ffddb1" stroke-dasharray="8 8" stroke-width="1.5"></circle>
+<path d="M200 40 L230 170 L360 200 L230 230 L200 360 L170 230 L40 200 L170 170 Z" fill="#ffddb1"></path>
+</svg>
+</div>
+<div class="relative z-10 flex flex-col gap-space-xs">
+<!-- Breadcrumb -->
+<nav aria-label="Breadcrumb" class="flex items-center gap-1.5 text-surface-container-high font-caption text-caption">
+<a class="hover:text-on-primary transition-colors flex items-center gap-1" data-path="beranda" href="#">
+<span class="material-symbols-outlined text-[15px]">home</span>
+<span>Beranda</span>
+</a>
+<span class="text-tertiary-fixed-dim text-[11px]">/</span>
+<span class="text-on-primary font-medium">Kamar &amp; Suite</span>
+</nav>
+<!-- Eyebrow Tag -->
+<span class="font-label-eyebrow text-label-eyebrow text-tertiary-fixed tracking-[0.15em] mt-space-sm uppercase">
+          Suaka Peristirahatan
+        </span>
+<!-- Title -->
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-primary font-medium tracking-tight">
+          Kamar &amp; Suite
+        </h1>
+<!-- Subtitle -->
+<p class="font-body-sm text-body-sm text-surface-container-highest max-w-sm mt-1 leading-relaxed">
+          Setiap bilik dirancang dengan penghormatan mendalam pada kayu jati lawas, sirkulasi udara alami, dan ketenangan batin.
+        </p>
+</div>
+</div>
+</section>
+<!-- Content Container with Mobile Margins -->
+<div class="px-margin-mobile flex flex-col gap-space-lg -mt-3 relative z-20 pb-16">
+<!-- Intro Note & Filter Badge -->
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-sm flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-botanical-green text-[20px]">verified</span>
+<span class="font-caption text-caption text-charcoal-text font-medium">
+          3 Tipe Bilik Tersedia
+        </span>
+</div>
+<div class="flex items-center gap-1 bg-amber-demo px-2.5 py-1 rounded-full">
+<span class="material-symbols-outlined text-on-tertiary-container text-[14px]">payments</span>
+<span class="font-caption text-caption text-charcoal-text font-medium text-[11px]">
+          Tarif Transparan
+        </span>
+</div>
+</div>
+<!-- 1-Column Room Listing Cards -->
+<div class="flex flex-col gap-6">
+<!-- Card 1: Standard Gladak -->
+<article class="bg-surface-white rounded-2xl overflow-hidden shadow-[0_12px_32px_rgba(18,60,58,0.06)] flex flex-col group transition-all duration-300">
+<!-- Photo Frame -->
+<div class="relative w-full aspect-[4/3] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Cozy traditional Javanese gladak bedroom featuring reclaimed honey-toned teak walls, queen size bed draped in crisp natural white linen, woven bamboo pendant light casting warm ambient glow, morning sunlight, private garden porch visible through timber door." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDOAyOQ4rzw37HC1YTShjaCK1asiYJzYjKfJ0ggmXt3ftnZv6NUyAEXyzSAhL1WTceD5tZ9TBlBFz47Ie63UgDw-p2cboZ5SWOIdwBQbMtBiZihQaEFYEk1DhKW3gPqj5fCJWBbhl3LCtIfkx-vxaEbP9H0ZFl7dlIMs5wyXjFhUIO0XunQcypxqBHPzCeXU4U2Nl4-gebpf_ts-QiMmw9apQi3eebI42b42WYWgnYY-QeOs0QDivv8"/>
+<!-- Badge -->
+<div class="absolute top-3.5 left-3.5 bg-amber-demo/95 backdrop-blur-sm text-charcoal-text font-label-eyebrow text-[11px] px-3 py-1 rounded-full shadow-sm tracking-wider uppercase font-semibold">
+            Bilik Tenang
+          </div>
+<!-- Wishlist Bookmark button -->
+<button aria-label="Simpan bilik" class="absolute top-3.5 right-3.5 w-9 h-9 rounded-full bg-surface-white/90 backdrop-blur-md text-primary flex items-center justify-center active:scale-90 transition-transform shadow-sm" onclick="this.querySelector('span').classList.toggle('fill-1'); this.querySelector('span').classList.toggle('text-terracotta-alert');" type="button">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+</div>
+<!-- Room Details -->
+<div class="p-5 flex flex-col gap-3.5">
+<div class="flex items-start justify-between gap-2">
+<div>
+<h3 class="font-title-sm text-title-sm text-primary tracking-tight">Standard Gladak</h3>
+<p class="font-caption text-caption text-stone-muted mt-0.5 flex items-center gap-1.5">
+<span>2 Tamu</span>
+<span class="text-secondary-fixed-dim">•</span>
+<span>24 m²</span>
+<span class="text-secondary-fixed-dim">•</span>
+<span>Kasur Queen</span>
+</p>
+</div>
+<!-- Star Rating Micro-badge -->
+<div class="flex items-center gap-1 text-on-tertiary-container bg-surface-container-low px-2 py-1 rounded-md">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-caption text-caption font-semibold text-charcoal-text text-[12px]">4.8</span>
+</div>
+</div>
+<!-- Amenity Chips Grid -->
+<div class="grid grid-cols-2 gap-2 pt-1">
+<div class="flex items-center gap-2 bg-surface-container-low px-2.5 py-1.5 rounded-lg text-charcoal-text">
+<span class="material-symbols-outlined text-botanical-green text-[18px]">wifi</span>
+<span class="font-caption text-caption">Wi-Fi Cepat</span>
+</div>
+<div class="flex items-center gap-2 bg-surface-container-low px-2.5 py-1.5 rounded-lg text-charcoal-text">
+<span class="material-symbols-outlined text-botanical-green text-[18px]">mode_fan</span>
+<span class="font-caption text-caption">AC Hening</span>
+</div>
+<div class="flex items-center gap-2 bg-surface-container-low px-2.5 py-1.5 rounded-lg text-charcoal-text">
+<span class="material-symbols-outlined text-botanical-green text-[18px]">bakery_dining</span>
+<span class="font-caption text-caption">Sarapan Pagi</span>
+</div>
+<div class="flex items-center gap-2 bg-surface-container-low px-2.5 py-1.5 rounded-lg text-charcoal-text">
+<span class="material-symbols-outlined text-botanical-green text-[18px]">deck</span>
+<span class="font-caption text-caption">Balkon Kebun</span>
+</div>
+</div>
+<!-- Price & CTA Action -->
+<div class="pt-3 mt-1 flex items-center justify-between gap-3">
+<div class="flex flex-col">
+<span class="font-caption text-caption text-stone-muted text-[11px] leading-none mb-1">Mulai</span>
+<div class="flex items-baseline gap-1">
+<span class="font-title-sm text-title-sm text-primary font-semibold">Rp450.000</span>
+<span class="font-caption text-caption text-stone-muted text-[12px]">/malam</span>
+</div>
+</div>
+<a class="h-11 px-5 rounded-full bg-primary-container text-on-primary font-button-text text-button-text flex items-center justify-center gap-1.5 active:scale-95 transition-all shadow-[0_4px_14px_rgba(18,60,58,0.18)]" data-path="reservasi" href="#">
+<span>Lihat Detail</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</article>
+<!-- Card 2: Deluxe Teras Menoreh (Featured) -->
+<article class="bg-surface-white rounded-2xl overflow-hidden shadow-[0_14px_36px_rgba(18,60,58,0.08)] flex flex-col group relative transition-all duration-300">
+<!-- Photo Frame -->
+<div class="relative w-full aspect-[4/3] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Luxurious boutique hotel room opening to an expansive teak veranda overlooking mist-shrouded green tropical hills of Menoreh, king size bed with brass lamp fixtures, outdoor stone soaking tub filled with herbal waters, elegant earth tones and natural daylight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcxlhkcmxZwnxoRcLch2B8h1rGFijPjbTsWC7BMnZbJFI4ZBB5r11W7n_FmtTs5asT6zsCm9TfgN2pmd5_I471pcntYLwYNC_KRVaWU3fdFS9qf5ojX7VY_4UJM31adOtiYCn4Ynp2d64nDFoFq46c2EqXzwHGshnxKy1Uq2eKiSt6HTwWS0hK3RAwrPogtXhylLq8OMpy3jAcaikeMu_Ydrit3Qu4UlRZlrZJ6BDFFCvomhZSm0a5"/>
+<!-- Badge -->
+<div class="absolute top-3.5 left-3.5 bg-botanical-green text-on-primary font-label-eyebrow text-[11px] px-3 py-1 rounded-full shadow-sm tracking-wider uppercase font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">local_fire_department</span>
+<span>Paling Diminati</span>
+</div>
+<button aria-label="Simpan bilik" class="absolute top-3.5 right-3.5 w-9 h-9 rounded-full bg-surface-white/90 backdrop-blur-md text-primary flex items-center justify-center active:scale-90 transition-transform shadow-sm" onclick="this.querySelector('span').classList.toggle('fill-1'); this.querySelector('span').classList.toggle('text-terracotta-alert');" type="button">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+</div>
+<!-- Room Details -->
+<div class="p-5 flex flex-col gap-3.5">
+<div class="flex items-start justify-between gap-2">
+<div>
+<h3 class="font-title-sm text-title-sm text-primary tracking-tight">Deluxe Teras Menoreh</h3>
+<p class="font-caption text-caption text-stone-muted mt-0.5 flex items-center gap-1.5">
+<span>3 Tamu</span>
+<span class="text-secondary-fixed-dim">•</span>
+<span>32 m²</span>
+<span class="text-secondary-fixed-dim">•</span>
+<span>King + Daybed</span>
+</p>
+</div>
+<div class="flex items-center gap-1 text-on-tertiary-container bg-surface-container-low px-2 py-1 rounded-md">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-caption text-caption font-semibold text-charcoal-text text-[12px]">4.9</span>
+</div>
+</div>
+<!-- Amenity Chips Grid -->
+<div class="grid grid-cols-2 gap-2 pt-1">
+<div class="flex items-center gap-2 bg-surface-container-low px-2.5 py-1.5 rounded-lg text-charcoal-text">
+<span class="material-symbols-outlined text-botanical-green text-[18px]">wifi</span>
+<span class="font-caption text-caption">Wi-Fi Cepat</span>
+</div>
+<div class="flex items-center gap-2 bg-surface-container-low px-2.5 py-1.5 rounded-lg text-charcoal-text">
+<span class="material-symbols-outlined text-botanical-green text-[18px]">bathtub</span>
+<span class="font-caption text-caption">Bak Rendam Alami</span>
+</div>
+<div class="flex items-center gap-2 bg-surface-container-low px-2.5 py-1.5 rounded-lg text-charcoal-text">
+<span class="material-symbols-outlined text-botanical-green text-[18px]">landscape</span>
+<span class="font-caption text-caption">Teras Lembah</span>
+</div>
+<div class="flex items-center gap-2 bg-surface-container-low px-2.5 py-1.5 rounded-lg text-charcoal-text">
+<span class="material-symbols-outlined text-botanical-green text-[18px]">bakery_dining</span>
+<span class="font-caption text-caption">Sarapan Pagi</span>
+</div>
+</div>
+<!-- Price & CTA Action -->
+<div class="pt-3 mt-1 flex items-center justify-between gap-3">
+<div class="flex flex-col">
+<span class="font-caption text-caption text-stone-muted text-[11px] leading-none mb-1">Mulai</span>
+<div class="flex items-baseline gap-1">
+<span class="font-title-sm text-title-sm text-primary font-semibold">Rp650.000</span>
+<span class="font-caption text-caption text-stone-muted text-[12px]">/malam</span>
+</div>
+</div>
+<a class="h-11 px-5 rounded-full bg-primary-container text-on-primary font-button-text text-button-text flex items-center justify-center gap-1.5 active:scale-95 transition-all shadow-[0_4px_14px_rgba(18,60,58,0.18)]" data-path="reservasi" href="#">
+<span>Lihat Detail</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</article>
+<!-- Card 3: Heritage Joglo Suite -->
+<article class="bg-surface-white rounded-2xl overflow-hidden shadow-[0_12px_32px_rgba(18,60,58,0.06)] flex flex-col group transition-all duration-300">
+<!-- Photo Frame -->
+<div class="relative w-full aspect-[4/3] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Grand heritage joglo suite pavilion with soaring carved teak tumpang sari ceiling, private plunge pool shimmering under natural sunlight, artisanal handwoven textiles on king bed, open-air river stone bathroom, supreme Javanese luxury in minimalist serene styling." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDr0oj3QTnU13498BXqeLytV6DNbrc2AETnkKn4gHT9F90jryydqvi8IRxb-l-VuMfnElaQNLPL60GcEWZThhppDXKb_qhZpOrlJyX5OGg9FKJEQ83_njRwG1E2SouwXmrktgAPnzTncEIpe77wc02S22MdF3UhJD8McKjmQRIe9Cb9TA5qJSAqg_um4HfMZOMHtEWcCOkJKdOqJC5UhUncQa2ZjcYsOKKmHG4oQKN5MYiIQLKT04e5"/>
+<!-- Badge -->
+<div class="absolute top-3.5 left-3.5 bg-tertiary-fixed text-on-tertiary-fixed font-label-eyebrow text-[11px] px-3 py-1 rounded-full shadow-sm tracking-wider uppercase font-semibold">
+            Vila Eksklusif
+          </div>
+<button aria-label="Simpan bilik" class="absolute top-3.5 right-3.5 w-9 h-9 rounded-full bg-surface-white/90 backdrop-blur-md text-primary flex items-center justify-center active:scale-90 transition-transform shadow-sm" onclick="this.querySelector('span').classList.toggle('fill-1'); this.querySelector('span').classList.toggle('text-terracotta-alert');" type="button">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+</div>
+<!-- Room Details -->
+<div class="p-5 flex flex-col gap-3.5">
+<div class="flex items-start justify-between gap-2">
+<div>
+<h3 class="font-title-sm text-title-sm text-primary tracking-tight">Heritage Joglo Suite</h3>
+<p class="font-caption text-caption text-stone-muted mt-0.5 flex items-center gap-1.5">
+<span>4 Tamu</span>
+<span class="text-secondary-fixed-dim">•</span>
+<span>48 m²</span>
+<span class="text-secondary-fixed-dim">•</span>
+<span>Paviliun Privat</span>
+</p>
+</div>
+<div class="flex items-center gap-1 text-on-tertiary-container bg-surface-container-low px-2 py-1 rounded-md">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-caption text-caption font-semibold text-charcoal-text text-[12px]">5.0</span>
+</div>
+</div>
+<!-- Amenity Chips Grid -->
+<div class="grid grid-cols-2 gap-2 pt-1">
+<div class="flex items-center gap-2 bg-surface-container-low px-2.5 py-1.5 rounded-lg text-charcoal-text">
+<span class="material-symbols-outlined text-botanical-green text-[18px]">pool</span>
+<span class="font-caption text-caption">Plunge Pool</span>
+</div>
+<div class="flex items-center gap-2 bg-surface-container-low px-2.5 py-1.5 rounded-lg text-charcoal-text">
+<span class="material-symbols-outlined text-botanical-green text-[18px]">concierge</span>
+<span class="font-caption text-caption">Butler Pribadi</span>
+</div>
+<div class="flex items-center gap-2 bg-surface-container-low px-2.5 py-1.5 rounded-lg text-charcoal-text">
+<span class="material-symbols-outlined text-botanical-green text-[18px]">hot_tub</span>
+<span class="font-caption text-caption">Bak Batu Kali</span>
+</div>
+<div class="flex items-center gap-2 bg-surface-container-low px-2.5 py-1.5 rounded-lg text-charcoal-text">
+<span class="material-symbols-outlined text-botanical-green text-[18px]">coffee</span>
+<span class="font-caption text-caption">Minibar Kopi</span>
+</div>
+</div>
+<!-- Price & CTA Action -->
+<div class="pt-3 mt-1 flex items-center justify-between gap-3">
+<div class="flex flex-col">
+<span class="font-caption text-caption text-stone-muted text-[11px] leading-none mb-1">Mulai</span>
+<div class="flex items-baseline gap-1">
+<span class="font-title-sm text-title-sm text-primary font-semibold">Rp950.000</span>
+<span class="font-caption text-caption text-stone-muted text-[12px]">/malam</span>
+</div>
+</div>
+<a class="h-11 px-5 rounded-full bg-primary-container text-on-primary font-button-text text-button-text flex items-center justify-center gap-1.5 active:scale-95 transition-all shadow-[0_4px_14px_rgba(18,60,58,0.18)]" data-path="reservasi" href="#">
+<span>Lihat Detail</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</article>
+</div>
+<!-- "Termasuk di Semua Kamar" Strip -->
+<section class="bg-secondary-container/60 rounded-2xl p-6 shadow-sm my-2 flex flex-col gap-4 relative overflow-hidden">
+<!-- Batik delicate watermark corner -->
+<div class="absolute -right-8 -bottom-8 w-36 h-36 opacity-10 pointer-events-none">
+<svg class="w-full h-full stroke-primary" fill="none" stroke-width="1.2" viewbox="0 0 100 100">
+<circle cx="50" cy="50" r="40"></circle>
+<path d="M50 10 Q70 50 50 90 Q30 50 50 10"></path>
+<path d="M10 50 Q50 70 90 50 Q50 30 10 50"></path>
+</svg>
+</div>
+<div class="flex flex-col gap-1 relative z-10">
+<span class="font-label-eyebrow text-label-eyebrow text-on-tertiary-container uppercase tracking-[0.14em] font-semibold">
+          Standar Kenyamanan
+        </span>
+<h2 class="font-headline-md-mobile text-headline-md-mobile text-primary font-medium">
+          Termasuk di Semua Kamar
+        </h2>
+<p class="font-body-sm text-body-sm text-secondary">
+          Setiap reservasi sudah mencakup keramahan khas Jawa tanpa biaya tambahan tersembunyi.
+        </p>
+</div>
+<!-- Feature List (2 columns on mobile for compact richness) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5 pt-2 relative z-10">
+<div class="flex items-start gap-3 bg-surface-white/80 backdrop-blur-sm p-3 rounded-xl">
+<div class="w-8 h-8 rounded-full bg-botanical-green/10 text-botanical-green flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[18px]">restaurant</span>
+</div>
+<div>
+<h4 class="font-caption text-caption font-semibold text-charcoal-text">Sarapan Pagi Organik</h4>
+<p class="font-caption text-caption text-stone-muted text-[12px] leading-tight mt-0.5">Bahan segar dari kebun lokal desa</p>
+</div>
+</div>
+<div class="flex items-start gap-3 bg-surface-white/80 backdrop-blur-sm p-3 rounded-xl">
+<div class="w-8 h-8 rounded-full bg-botanical-green/10 text-botanical-green flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[18px]">local_cafe</span>
+</div>
+<div>
+<h4 class="font-caption text-caption font-semibold text-charcoal-text">Seduhan Teh &amp; Kopi Menoreh</h4>
+<p class="font-caption text-caption text-stone-muted text-[12px] leading-tight mt-0.5">Dipanggang segar secara tradisional</p>
+</div>
+</div>
+<div class="flex items-start gap-3 bg-surface-white/80 backdrop-blur-sm p-3 rounded-xl">
+<div class="w-8 h-8 rounded-full bg-botanical-green/10 text-botanical-green flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[18px]">pool</span>
+</div>
+<div>
+<h4 class="font-caption text-caption font-semibold text-charcoal-text">Akses Kolam Mata Air</h4>
+<p class="font-caption text-caption text-stone-muted text-[12px] leading-tight mt-0.5">Air pegunungan murni tanpa kaporit</p>
+</div>
+</div>
+<div class="flex items-start gap-3 bg-surface-white/80 backdrop-blur-sm p-3 rounded-xl">
+<div class="w-8 h-8 rounded-full bg-botanical-green/10 text-botanical-green flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[18px]">spa</span>
+</div>
+<div>
+<h4 class="font-caption text-caption font-semibold text-charcoal-text">Mandi Herbal Alami</h4>
+<p class="font-caption text-caption text-stone-muted text-[12px] leading-tight mt-0.5">Minyak atsiri serai dan pandan wangi</p>
+</div>
+</div>
+<div class="flex items-start gap-3 bg-surface-white/80 backdrop-blur-sm p-3 rounded-xl">
+<div class="w-8 h-8 rounded-full bg-botanical-green/10 text-botanical-green flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[18px]">wifi_tethering</span>
+</div>
+<div>
+<h4 class="font-caption text-caption font-semibold text-charcoal-text">Wi-Fi Serat Optik</h4>
+<p class="font-caption text-caption text-stone-muted text-[12px] leading-tight mt-0.5">Koneksi stabil di seluruh area sanggraloka</p>
+</div>
+</div>
+<div class="flex items-start gap-3 bg-surface-white/80 backdrop-blur-sm p-3 rounded-xl">
+<div class="w-8 h-8 rounded-full bg-botanical-green/10 text-botanical-green flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[18px]">emoji_food_beverage</span>
+</div>
+<div>
+<h4 class="font-caption text-caption font-semibold text-charcoal-text">Layanan Teh Sore</h4>
+<p class="font-caption text-caption text-stone-muted text-[12px] leading-tight mt-0.5">Ditemani kudapan getuk &amp; jadah hangat</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Warm Hospitality Note from the Host -->
+<div class="bg-surface-white p-5 rounded-2xl shadow-[0_4px_20px_rgba(18,60,58,0.04)] flex items-center gap-4">
+<div class="w-12 h-12 rounded-full overflow-hidden bg-surface-container flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="Portrait of a welcoming Javanese sanctuary host wearing a natural linen surjan jacket, warm friendly smile, standing in a serene sunlit teak courtyard with lush green leaves." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEy8tJQMGGsQegS0j44c17s-onwBm-ch0hGpATuqTcOIMkAmUu_EdNztV4Dl6lLLGbmiEGvFpbhfsENH_L6mxZNdEzJn6XmcaD_BgRor46uMn32Z3HyxMumCYWWMee2mSNEdYMbMAbofVGxfiJ-6FdKUuBcLIeQ1W_OCQSmHEM5N9KPQHT91ETS5PFVwUR0qE028OOdwZnhOi8yQnzW0a2wYyB5Tu3Ibn6efp7QM5QZfPo44G109Fp"/>
+</div>
+<div class="flex flex-col">
+<p class="font-caption text-caption italic text-charcoal-text leading-snug">
+          "Kenyamanan sejati hadir saat langkah Anda melambat dan napas Anda kembali selaras dengan alam."
+        </p>
+<span class="font-caption text-caption text-stone-muted text-[11px] mt-1 font-medium">
+          — Mas Darmo, Manajer Penginapan NusaStay
+        </span>
+</div>
+</div>
+<!-- CTA Banner -->
+<section class="bg-primary-container text-on-primary rounded-2xl p-6 shadow-[0_16px_40px_rgba(18,60,58,0.18)] flex flex-col gap-4 text-center items-center relative overflow-hidden">
+<!-- Glow ambient decorative circle -->
+<div class="absolute -top-12 -left-12 w-36 h-36 rounded-full bg-botanical-green/20 blur-2xl pointer-events-none"></div>
+<div class="absolute -bottom-12 -right-12 w-36 h-36 rounded-full bg-tertiary-fixed-dim/20 blur-2xl pointer-events-none"></div>
+<div class="w-10 h-10 rounded-full bg-surface-white/10 flex items-center justify-center text-tertiary-fixed-dim">
+<span class="material-symbols-outlined text-[22px]">bedtime</span>
+</div>
+<div class="flex flex-col gap-1.5 relative z-10">
+<h2 class="font-headline-md-mobile text-headline-md-mobile text-on-primary font-medium tracking-tight">
+          Awali Perjalanan Menuju Ketenangan
+        </h2>
+<p class="font-body-sm text-body-sm text-surface-container-highest max-w-xs leading-relaxed">
+          Pilih tanggal rehat Anda sekarang. Pembatalan fleksibel hingga 48 jam sebelum kedatangan.
+        </p>
+</div>
+<div class="w-full flex flex-col items-center gap-3 relative z-10 pt-1">
+<a class="w-full max-w-xs h-12 rounded-full bg-surface-white text-primary font-button-text text-button-text flex items-center justify-center gap-2 shadow-md active:scale-95 transition-all font-semibold hover:bg-surface-container-low" data-path="reservasi" href="#">
+<span class="material-symbols-outlined text-[18px]">calendar_month</span>
+<span>Ajukan Reservasi</span>
+</a>
+<div class="flex items-center gap-1.5 text-on-primary-container text-caption font-caption text-[11px]">
+<span class="material-symbols-outlined text-[13px]">info</span>
+<span>Mode demo — data tidak disimpan.</span>
+</div>
+</div>
+</section>
+</div>
+</div></main><a aria-label="WhatsApp NusaStay" class="fixed right-6 bottom-24 z-40 w-14 h-14 rounded-full bg-botanical-green text-on-primary flex items-center justify-center shadow-[0_12px_28px_rgba(18,60,58,0.28)] active:scale-95 transition-all" href="https://wa.me/" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[28px]">chat</span></a><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(18,60,58,0.05)]" data-active-classes="text-primary font-semibold"><div class="flex justify-around items-center h-16 px-space-xs"><a class="flex flex-col items-center justify-center gap-0.5 w-16 h-14 text-stone-muted transition-colors active:scale-95" data-path="beranda" href="#"><span class="material-symbols-outlined text-[22px]">home</span><span class="font-caption text-caption text-[11px]">Beranda</span></a><a aria-current="page" class="flex flex-col items-center justify-center gap-0.5 w-16 h-14 transition-colors active:scale-95 text-primary font-semibold" data-path="kamar" href="#"><span class="material-symbols-outlined text-[22px]">bed</span><span class="font-caption text-caption text-[11px]">Kamar</span></a><a class="flex flex-col items-center justify-center gap-0.5 w-16 h-14 text-stone-muted transition-colors active:scale-95" data-path="pengalaman" href="#"><span class="material-symbols-outlined text-[22px]">spa</span><span class="font-caption text-caption text-[11px]">Aktivitas</span></a><a class="flex flex-col items-center justify-center gap-0.5 w-16 h-14 text-stone-muted transition-colors active:scale-95" data-path="profil-tamu" href="#"><span class="material-symbols-outlined text-[22px]">account_circle</span><span class="font-caption text-caption text-[11px]">Tamu</span></a></div></nav></body></html>
